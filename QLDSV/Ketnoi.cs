@@ -16,6 +16,9 @@ namespace QLDSV
         public DataTable dta;
         public SqlDataAdapter ada;
 
+        /*
+         Demo github by phucpt from Moola
+         */
         public void KetNoi_DuLieu()
         {
             string strKetNoi = @"Data Source=DESKTOP-2L7IN18\SQLEXPRESS;Initial Catalog=QL_Diem_SV;Integrated Security=True";
