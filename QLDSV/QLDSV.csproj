@@ -58,6 +58,30 @@
     <Compile Include="Frm_DangNhap.Designer.cs">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_LopCQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LopCQ.Designer.cs">
+      <DependentUpon>Frm_LopCQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LopHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LopHP.Designer.cs">
+      <DependentUpon>Frm_LopHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TimKiem_LopCQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_LopCQ.Designer.cs">
+      <DependentUpon>Frm_TimKiem_LopCQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TimKiem_LopHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_LopHP.Designer.cs">
+      <DependentUpon>Frm_TimKiem_LopHP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_QLDSV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +102,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LopCQ.resx">
+      <DependentUpon>Frm_LopCQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LopHP.resx">
+      <DependentUpon>Frm_LopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_LopCQ.resx">
+      <DependentUpon>Frm_TimKiem_LopCQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_LopHP.resx">
+      <DependentUpon>Frm_TimKiem_LopHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QLDSV.resx">
       <DependentUpon>Frm_QLDSV.cs</DependentUpon>

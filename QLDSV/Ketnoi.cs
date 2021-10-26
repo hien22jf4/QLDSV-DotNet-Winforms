@@ -19,9 +19,11 @@ namespace QLDSV
         /*
          Demo github by phucpt from Moola
          */
+        //string strKetNoi = @"Data Source=MINHX0AWN;Initial Catalog=QL_Diem_SV;Integrated Security=True";
+        //MINHX0AWN
         public void KetNoi_DuLieu()
         {
-            string strKetNoi = @"Data Source=DESKTOP-2L7IN18\SQLEXPRESS;Initial Catalog=QL_Diem_SV;Integrated Security=True";
+            string strKetNoi = @"Data Source=MINHX0AWN;Initial Catalog=QL_Diem_SV;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }

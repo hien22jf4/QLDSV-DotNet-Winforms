@@ -109,5 +109,29 @@ namespace QLDSV
             Form frmDangNhap = new Frm_DangNhap();
             frmDangNhap.Show();
         }
+
+        private void lỚPCHÍNHQUYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_TimKiem_LopCQ();
+            frm.Show();
+        }
+
+        private void lỚPHỌCPHẦNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_TimKiem_LopHP();
+            frm.Show();
+        }
+
+        private void lỚPCHÍNHQUYToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_LopCQ();
+            frm.Show();
+        }
+
+        private void lỚPHỌCPHẦNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_LopHP();
+            frm.Show();
+        }
     }
 }

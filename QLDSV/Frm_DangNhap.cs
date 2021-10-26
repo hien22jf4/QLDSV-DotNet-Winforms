@@ -44,7 +44,9 @@ namespace QLDSV
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.OK) this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
