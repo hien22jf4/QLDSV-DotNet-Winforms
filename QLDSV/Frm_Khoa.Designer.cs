@@ -41,13 +41,14 @@ namespace QLDSV
             this.lblmakhoa = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtnamtl = new System.Windows.Forms.TextBox();
+            this.txtsodt = new System.Windows.Forms.TextBox();
+            this.txtmakhoa = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtmakhoa = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtsodt = new System.Windows.Forms.TextBox();
-            this.txtnamtl = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKhoa)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,7 +83,7 @@ namespace QLDSV
             // txttenkhoa
             // 
             this.txttenkhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttenkhoa.Location = new System.Drawing.Point(528, 35);
+            this.txttenkhoa.Location = new System.Drawing.Point(528, 87);
             this.txttenkhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttenkhoa.Name = "txttenkhoa";
             this.txttenkhoa.Size = new System.Drawing.Size(232, 30);
@@ -91,7 +92,7 @@ namespace QLDSV
             // txtdiachi
             // 
             this.txtdiachi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdiachi.Location = new System.Drawing.Point(142, 112);
+            this.txtdiachi.Location = new System.Drawing.Point(142, 146);
             this.txtdiachi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtdiachi.Name = "txtdiachi";
             this.txtdiachi.Size = new System.Drawing.Size(180, 30);
@@ -101,7 +102,7 @@ namespace QLDSV
             // 
             this.lbldiachi.AutoSize = true;
             this.lbldiachi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldiachi.Location = new System.Drawing.Point(39, 115);
+            this.lbldiachi.Location = new System.Drawing.Point(39, 149);
             this.lbldiachi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldiachi.Name = "lbldiachi";
             this.lbldiachi.Size = new System.Drawing.Size(74, 22);
@@ -148,7 +149,7 @@ namespace QLDSV
             // 
             this.lbltenlop.AutoSize = true;
             this.lbltenlop.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltenlop.Location = new System.Drawing.Point(424, 46);
+            this.lbltenlop.Location = new System.Drawing.Point(424, 90);
             this.lbltenlop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltenlop.Name = "lbltenlop";
             this.lbltenlop.Size = new System.Drawing.Size(88, 22);
@@ -159,7 +160,7 @@ namespace QLDSV
             // 
             this.lblmakhoa.AutoSize = true;
             this.lblmakhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmakhoa.Location = new System.Drawing.Point(39, 46);
+            this.lblmakhoa.Location = new System.Drawing.Point(29, 90);
             this.lblmakhoa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmakhoa.Name = "lblmakhoa";
             this.lblmakhoa.Size = new System.Drawing.Size(84, 22);
@@ -169,7 +170,7 @@ namespace QLDSV
             // btn_exit
             // 
             this.btn_exit.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.Location = new System.Drawing.Point(1070, 639);
+            this.btn_exit.Location = new System.Drawing.Point(1066, 643);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(112, 35);
@@ -180,6 +181,7 @@ namespace QLDSV
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtnamtl);
             this.panel3.Controls.Add(this.txtsodt);
             this.panel3.Controls.Add(this.txttenkhoa);
@@ -193,8 +195,57 @@ namespace QLDSV
             this.panel3.Location = new System.Drawing.Point(18, 19);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1160, 163);
+            this.panel3.Size = new System.Drawing.Size(1160, 203);
             this.panel3.TabIndex = 16;
+            // 
+            // txtnamtl
+            // 
+            this.txtnamtl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnamtl.Location = new System.Drawing.Point(936, 146);
+            this.txtnamtl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtnamtl.Name = "txtnamtl";
+            this.txtnamtl.Size = new System.Drawing.Size(112, 30);
+            this.txtnamtl.TabIndex = 3;
+            // 
+            // txtsodt
+            // 
+            this.txtsodt.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsodt.Location = new System.Drawing.Point(528, 146);
+            this.txtsodt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtsodt.Name = "txtsodt";
+            this.txtsodt.Size = new System.Drawing.Size(232, 30);
+            this.txtsodt.TabIndex = 3;
+            // 
+            // txtmakhoa
+            // 
+            this.txtmakhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmakhoa.Location = new System.Drawing.Point(152, 87);
+            this.txtmakhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtmakhoa.Name = "txtmakhoa";
+            this.txtmakhoa.Size = new System.Drawing.Size(180, 30);
+            this.txtmakhoa.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(795, 149);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 22);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Năm thành lập";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(392, 149);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 22);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Số điện thoại:";
             // 
             // panel2
             // 
@@ -202,7 +253,7 @@ namespace QLDSV
             this.panel2.Controls.Add(this.btnchapnhat);
             this.panel2.Controls.Add(this.btnthem);
             this.panel2.Controls.Add(this.btntaomoi);
-            this.panel2.Location = new System.Drawing.Point(351, 192);
+            this.panel2.Location = new System.Drawing.Point(341, 243);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(498, 57);
@@ -211,60 +262,21 @@ namespace QLDSV
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridViewKhoa);
-            this.panel1.Location = new System.Drawing.Point(18, 258);
+            this.panel1.Location = new System.Drawing.Point(18, 323);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1164, 372);
+            this.panel1.Size = new System.Drawing.Size(1160, 307);
             this.panel1.TabIndex = 14;
             // 
-            // txtmakhoa
+            // label3
             // 
-            this.txtmakhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmakhoa.Location = new System.Drawing.Point(142, 44);
-            this.txtmakhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtmakhoa.Name = "txtmakhoa";
-            this.txtmakhoa.Size = new System.Drawing.Size(180, 30);
-            this.txtmakhoa.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 115);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Số điện thoại:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(790, 115);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 22);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Năm thành lập";
-            // 
-            // txtsodt
-            // 
-            this.txtsodt.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsodt.Location = new System.Drawing.Point(528, 112);
-            this.txtsodt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtsodt.Name = "txtsodt";
-            this.txtsodt.Size = new System.Drawing.Size(232, 30);
-            this.txtsodt.TabIndex = 3;
-            // 
-            // txtnamtl
-            // 
-            this.txtnamtl.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnamtl.Location = new System.Drawing.Point(933, 112);
-            this.txtnamtl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtnamtl.Name = "txtnamtl";
-            this.txtnamtl.Size = new System.Drawing.Size(112, 30);
-            this.txtnamtl.TabIndex = 3;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(456, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(227, 26);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "THÔNG TIN KHOA";
             // 
             // Frm_Khoa
             // 
@@ -308,5 +320,6 @@ namespace QLDSV
         private System.Windows.Forms.TextBox txtsodt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }
