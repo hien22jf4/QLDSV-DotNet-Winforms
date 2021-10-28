@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +63,18 @@
     <Compile Include="Frm_DangNhap.Designer.cs">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_GiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GiangVien.Designer.cs">
+      <DependentUpon>Frm_GiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Khoa.Designer.cs">
+      <DependentUpon>Frm_Khoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_LopCQ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +86,24 @@
     </Compile>
     <Compile Include="Frm_LopHP.Designer.cs">
       <DependentUpon>Frm_LopHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MonHoc.Designer.cs">
+      <DependentUpon>Frm_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TimKiem_GiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_GiangVien.Designer.cs">
+      <DependentUpon>Frm_TimKiem_GiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TimKiem_Khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_Khoa.Designer.cs">
+      <DependentUpon>Frm_TimKiem_Khoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_TimKiem_LopCQ.cs">
       <SubType>Form</SubType>
@@ -88,6 +123,12 @@
     <Compile Include="Frm_QLDSV.Designer.cs">
       <DependentUpon>Frm_QLDSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_TimKiem_MonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_MonHoc.Designer.cs">
+      <DependentUpon>Frm_TimKiem_MonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_TraCuuDiemHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +144,26 @@
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GiangVien.resx">
+      <DependentUpon>Frm_GiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Khoa.resx">
+      <DependentUpon>Frm_Khoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_LopCQ.resx">
       <DependentUpon>Frm_LopCQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LopHP.resx">
       <DependentUpon>Frm_LopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MonHoc.resx">
+      <DependentUpon>Frm_MonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_GiangVien.resx">
+      <DependentUpon>Frm_TimKiem_GiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_Khoa.resx">
+      <DependentUpon>Frm_TimKiem_Khoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TimKiem_LopCQ.resx">
       <DependentUpon>Frm_TimKiem_LopCQ.cs</DependentUpon>
@@ -117,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_QLDSV.resx">
       <DependentUpon>Frm_QLDSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_MonHoc.resx">
+      <DependentUpon>Frm_TimKiem_MonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +187,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

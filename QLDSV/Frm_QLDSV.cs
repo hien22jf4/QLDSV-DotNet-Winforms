@@ -133,5 +133,19 @@ namespace QLDSV
             Form frm = new Frm_LopHP();
             frm.Show();
         }
+
+        private void kHOAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form frm = new Frm_Khoa();
+            frm.Show();
+        }
+
+        private void mÔNHỌCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Form frm = new Frm_MonHoc();
+            frm.Show();
+        }
     }
 }
