@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QLDSV
 {
-    public partial class Form1 : Form
+    public partial class Frm_SinhVien : Form
     {
-        public Form1()
+        public Frm_SinhVien()
         {
             InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

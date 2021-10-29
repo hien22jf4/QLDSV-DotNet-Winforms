@@ -51,7 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbltengv = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGiangvien)).BeginInit();
             this.panel2.SuspendLayout();
@@ -225,7 +225,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.ngaysinh);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.cbomakhoa);
             this.panel3.Controls.Add(this.txtquequan);
@@ -317,14 +317,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Giới tính:";
             // 
-            // dateTimePicker1
+            // ngaysinh
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(747, 125);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 26);
-            this.dateTimePicker1.TabIndex = 8;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 10, 29, 8, 40, 49, 0);
+            this.ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ngaysinh.Location = new System.Drawing.Point(743, 137);
+            this.ngaysinh.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.ngaysinh.Name = "ngaysinh";
+            this.ngaysinh.Size = new System.Drawing.Size(224, 26);
+            this.ngaysinh.TabIndex = 10;
             // 
             // Frm_GiangVien
             // 
@@ -372,6 +372,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox lstgioitinh;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker ngaysinh;
     }
 }

@@ -40,8 +40,8 @@ namespace QLDSV
             txttengv.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "ten_GV");
             lstgioitinh.DataBindings.Clear();
             lstgioitinh.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "gioi_tinh");
-            dtpngaysinh.DataBindings.Clear();
-            dtpngaysinh.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "dob_gv");
+            ngaysinh.DataBindings.Clear();
+            ngaysinh.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "dob_gv");
             txtsodt.DataBindings.Clear();
             txtsodt.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "So_dien_thoai");
             txtquequan.DataBindings.Clear();
@@ -60,7 +60,8 @@ namespace QLDSV
 
         private void btntaomoi_Click(object sender, EventArgs e)
         {
-            txtmagv.Text = txtmagv.Text = txtsodt.Text = dtpngaysinh.Text = lstgioitinh.Text = txtquequan.Text = "";
+            txtmagv.Text = txtmagv.Text = txtsodt.Text = lstgioitinh.Text = txtquequan.Text = "";
+            ngaysinh.Value = DateTime.Today;
             dataGridViewGiangvien.Show();
         }
 
@@ -78,7 +79,7 @@ namespace QLDSV
             }
             else
             {
-                string sql_luu = "Insert into GIANGVIEN Values(' " + txtmagv.Text + "', '" + txttengv.Text + "','" + cbomakhoa.Text + "', '" + txtquequan.Text + "', '" + txtsodt.Text + "', '" + lstgioitinh.Text + "' , '" + dtpngaysinh.Text + "')";
+                string sql_luu = "Insert into GIANGVIEN Values(' " + txtmagv.Text + "', '" + txttengv.Text + "','" + cbomakhoa.Text + "', '" + txtquequan.Text + "', '" + txtsodt.Text + "', '" + lstgioitinh.Text + "' , '" + ngaysinh.Value + "')";
 
                 kn.Thucthi(sql_luu);
                 GIANGVIEN();
@@ -99,7 +100,7 @@ namespace QLDSV
             }
             else
             {
-                string sql_change = "update GIANGVIEN set ten_GV='" + txttengv.Text + "',dob_gv ='" + dtpngaysinh.Text + "',quequan ='" + txtquequan.Text + "' ,So_dien_thoai ='" + txtsodt.Text + "' ,gioi_tinh ='" + lstgioitinh.Text + "' where id_GV='" + txtmagv.Text + "'";
+                string sql_change = "update GIANGVIEN set ten_GV='" + txttengv.Text + "',dob_gv ='" + ngaysinh.Value + "',quequan ='" + txtquequan.Text + "' ,So_dien_thoai ='" + txtsodt.Text + "' ,gioi_tinh ='" + lstgioitinh.Text + "' where id_GV='" + txtmagv.Text + "'";
                 kn.Thucthi(sql_change);
                 GIANGVIEN();
             }
