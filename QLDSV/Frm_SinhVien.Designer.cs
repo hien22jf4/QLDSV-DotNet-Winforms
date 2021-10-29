@@ -30,26 +30,26 @@ namespace QLDSV
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbo_malop = new System.Windows.Forms.ComboBox();
+            this.txt_quequan = new System.Windows.Forms.TextBox();
+            this.ngaysinh = new System.Windows.Forms.DateTimePicker();
+            this.txt_tensv = new System.Windows.Forms.TextBox();
+            this.txt_masv = new System.Windows.Forms.TextBox();
+            this.lbl_malop = new System.Windows.Forms.Label();
+            this.lbl_quequan = new System.Windows.Forms.Label();
+            this.lbl_gioitinh = new System.Windows.Forms.Label();
+            this.lbl_ngaysinh = new System.Windows.Forms.Label();
+            this.lbl_tensv = new System.Windows.Forms.Label();
             this.lbl_masv = new System.Windows.Forms.Label();
             this.lbl_sinhvien = new System.Windows.Forms.Label();
-            this.lbl_tensv = new System.Windows.Forms.Label();
-            this.lbl_ngaysinh = new System.Windows.Forms.Label();
-            this.lbl_gioitinh = new System.Windows.Forms.Label();
-            this.lbl_quequan = new System.Windows.Forms.Label();
-            this.lbl_malop = new System.Windows.Forms.Label();
-            this.txt_masv = new System.Windows.Forms.TextBox();
-            this.txt_tensv = new System.Windows.Forms.TextBox();
-            this.ngaysinh = new System.Windows.Forms.DateTimePicker();
-            this.txt_quequan = new System.Windows.Forms.TextBox();
-            this.cbo_malop = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_nhapmoi = new System.Windows.Forms.Button();
-            this.btn_them = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
+            this.btn_nhapmoi = new System.Windows.Forms.Button();
             this.Grid_Sinhvien = new System.Windows.Forms.DataGridView();
             this.btn_thoat = new System.Windows.Forms.Button();
+            this.lst_gioitinh = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Sinhvien)).BeginInit();
@@ -57,7 +57,7 @@ namespace QLDSV
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.lst_gioitinh);
             this.panel1.Controls.Add(this.cbo_malop);
             this.panel1.Controls.Add(this.txt_quequan);
             this.panel1.Controls.Add(this.ngaysinh);
@@ -75,6 +75,94 @@ namespace QLDSV
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 239);
             this.panel1.TabIndex = 0;
+            // 
+            // cbo_malop
+            // 
+            this.cbo_malop.FormattingEnabled = true;
+            this.cbo_malop.Location = new System.Drawing.Point(647, 179);
+            this.cbo_malop.Name = "cbo_malop";
+            this.cbo_malop.Size = new System.Drawing.Size(235, 28);
+            this.cbo_malop.TabIndex = 11;
+            this.cbo_malop.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // txt_quequan
+            // 
+            this.txt_quequan.Location = new System.Drawing.Point(647, 127);
+            this.txt_quequan.Name = "txt_quequan";
+            this.txt_quequan.Size = new System.Drawing.Size(235, 27);
+            this.txt_quequan.TabIndex = 10;
+            // 
+            // ngaysinh
+            // 
+            this.ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ngaysinh.Location = new System.Drawing.Point(179, 183);
+            this.ngaysinh.Name = "ngaysinh";
+            this.ngaysinh.Size = new System.Drawing.Size(246, 27);
+            this.ngaysinh.TabIndex = 9;
+            // 
+            // txt_tensv
+            // 
+            this.txt_tensv.Location = new System.Drawing.Point(179, 129);
+            this.txt_tensv.Name = "txt_tensv";
+            this.txt_tensv.Size = new System.Drawing.Size(246, 27);
+            this.txt_tensv.TabIndex = 8;
+            // 
+            // txt_masv
+            // 
+            this.txt_masv.Location = new System.Drawing.Point(179, 75);
+            this.txt_masv.Name = "txt_masv";
+            this.txt_masv.Size = new System.Drawing.Size(246, 27);
+            this.txt_masv.TabIndex = 7;
+            // 
+            // lbl_malop
+            // 
+            this.lbl_malop.AutoSize = true;
+            this.lbl_malop.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_malop.Location = new System.Drawing.Point(519, 187);
+            this.lbl_malop.Name = "lbl_malop";
+            this.lbl_malop.Size = new System.Drawing.Size(57, 19);
+            this.lbl_malop.TabIndex = 6;
+            this.lbl_malop.Text = "Mã lớp";
+            // 
+            // lbl_quequan
+            // 
+            this.lbl_quequan.AutoSize = true;
+            this.lbl_quequan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quequan.Location = new System.Drawing.Point(519, 130);
+            this.lbl_quequan.Name = "lbl_quequan";
+            this.lbl_quequan.Size = new System.Drawing.Size(72, 19);
+            this.lbl_quequan.TabIndex = 5;
+            this.lbl_quequan.Text = "Quê quán";
+            // 
+            // lbl_gioitinh
+            // 
+            this.lbl_gioitinh.AutoSize = true;
+            this.lbl_gioitinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gioitinh.Location = new System.Drawing.Point(519, 73);
+            this.lbl_gioitinh.Name = "lbl_gioitinh";
+            this.lbl_gioitinh.Size = new System.Drawing.Size(70, 19);
+            this.lbl_gioitinh.TabIndex = 4;
+            this.lbl_gioitinh.Text = "Giới tính";
+            // 
+            // lbl_ngaysinh
+            // 
+            this.lbl_ngaysinh.AutoSize = true;
+            this.lbl_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ngaysinh.Location = new System.Drawing.Point(42, 190);
+            this.lbl_ngaysinh.Name = "lbl_ngaysinh";
+            this.lbl_ngaysinh.Size = new System.Drawing.Size(76, 19);
+            this.lbl_ngaysinh.TabIndex = 3;
+            this.lbl_ngaysinh.Text = "Ngày sinh";
+            // 
+            // lbl_tensv
+            // 
+            this.lbl_tensv.AutoSize = true;
+            this.lbl_tensv.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tensv.Location = new System.Drawing.Point(42, 134);
+            this.lbl_tensv.Name = "lbl_tensv";
+            this.lbl_tensv.Size = new System.Drawing.Size(98, 19);
+            this.lbl_tensv.TabIndex = 2;
+            this.lbl_tensv.Text = "Tên sinh viên";
             // 
             // lbl_masv
             // 
@@ -97,101 +185,6 @@ namespace QLDSV
             this.lbl_sinhvien.TabIndex = 0;
             this.lbl_sinhvien.Text = "THÔNG TIN SINH VIÊN";
             // 
-            // lbl_tensv
-            // 
-            this.lbl_tensv.AutoSize = true;
-            this.lbl_tensv.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tensv.Location = new System.Drawing.Point(42, 134);
-            this.lbl_tensv.Name = "lbl_tensv";
-            this.lbl_tensv.Size = new System.Drawing.Size(98, 19);
-            this.lbl_tensv.TabIndex = 2;
-            this.lbl_tensv.Text = "Tên sinh viên";
-            // 
-            // lbl_ngaysinh
-            // 
-            this.lbl_ngaysinh.AutoSize = true;
-            this.lbl_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngaysinh.Location = new System.Drawing.Point(42, 190);
-            this.lbl_ngaysinh.Name = "lbl_ngaysinh";
-            this.lbl_ngaysinh.Size = new System.Drawing.Size(76, 19);
-            this.lbl_ngaysinh.TabIndex = 3;
-            this.lbl_ngaysinh.Text = "Ngày sinh";
-            // 
-            // lbl_gioitinh
-            // 
-            this.lbl_gioitinh.AutoSize = true;
-            this.lbl_gioitinh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gioitinh.Location = new System.Drawing.Point(519, 73);
-            this.lbl_gioitinh.Name = "lbl_gioitinh";
-            this.lbl_gioitinh.Size = new System.Drawing.Size(70, 19);
-            this.lbl_gioitinh.TabIndex = 4;
-            this.lbl_gioitinh.Text = "Giới tính";
-            // 
-            // lbl_quequan
-            // 
-            this.lbl_quequan.AutoSize = true;
-            this.lbl_quequan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_quequan.Location = new System.Drawing.Point(519, 130);
-            this.lbl_quequan.Name = "lbl_quequan";
-            this.lbl_quequan.Size = new System.Drawing.Size(72, 19);
-            this.lbl_quequan.TabIndex = 5;
-            this.lbl_quequan.Text = "Quê quán";
-            // 
-            // lbl_malop
-            // 
-            this.lbl_malop.AutoSize = true;
-            this.lbl_malop.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_malop.Location = new System.Drawing.Point(519, 187);
-            this.lbl_malop.Name = "lbl_malop";
-            this.lbl_malop.Size = new System.Drawing.Size(57, 19);
-            this.lbl_malop.TabIndex = 6;
-            this.lbl_malop.Text = "Mã lớp";
-            // 
-            // txt_masv
-            // 
-            this.txt_masv.Location = new System.Drawing.Point(179, 75);
-            this.txt_masv.Name = "txt_masv";
-            this.txt_masv.Size = new System.Drawing.Size(246, 27);
-            this.txt_masv.TabIndex = 7;
-            // 
-            // txt_tensv
-            // 
-            this.txt_tensv.Location = new System.Drawing.Point(179, 129);
-            this.txt_tensv.Name = "txt_tensv";
-            this.txt_tensv.Size = new System.Drawing.Size(246, 27);
-            this.txt_tensv.TabIndex = 8;
-            // 
-            // ngaysinh
-            // 
-            this.ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ngaysinh.Location = new System.Drawing.Point(179, 183);
-            this.ngaysinh.Name = "ngaysinh";
-            this.ngaysinh.Size = new System.Drawing.Size(246, 27);
-            this.ngaysinh.TabIndex = 9;
-            // 
-            // txt_quequan
-            // 
-            this.txt_quequan.Location = new System.Drawing.Point(647, 127);
-            this.txt_quequan.Name = "txt_quequan";
-            this.txt_quequan.Size = new System.Drawing.Size(235, 27);
-            this.txt_quequan.TabIndex = 10;
-            // 
-            // cbo_malop
-            // 
-            this.cbo_malop.FormattingEnabled = true;
-            this.cbo_malop.Location = new System.Drawing.Point(647, 179);
-            this.cbo_malop.Name = "cbo_malop";
-            this.cbo_malop.Size = new System.Drawing.Size(235, 28);
-            this.cbo_malop.TabIndex = 11;
-            this.cbo_malop.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(647, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(235, 27);
-            this.textBox2.TabIndex = 12;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_xoa);
@@ -203,25 +196,16 @@ namespace QLDSV
             this.panel2.Size = new System.Drawing.Size(497, 71);
             this.panel2.TabIndex = 1;
             // 
-            // btn_nhapmoi
+            // btn_xoa
             // 
-            this.btn_nhapmoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nhapmoi.Location = new System.Drawing.Point(19, 17);
-            this.btn_nhapmoi.Name = "btn_nhapmoi";
-            this.btn_nhapmoi.Size = new System.Drawing.Size(100, 34);
-            this.btn_nhapmoi.TabIndex = 0;
-            this.btn_nhapmoi.Text = "Nhập mới";
-            this.btn_nhapmoi.UseVisualStyleBackColor = true;
-            // 
-            // btn_them
-            // 
-            this.btn_them.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Location = new System.Drawing.Point(139, 17);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(100, 34);
-            this.btn_them.TabIndex = 1;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa.Location = new System.Drawing.Point(379, 17);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(100, 34);
+            this.btn_xoa.TabIndex = 3;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // button3
             // 
@@ -234,15 +218,27 @@ namespace QLDSV
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btn_xoa
+            // btn_them
             // 
-            this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.Location = new System.Drawing.Point(379, 17);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(100, 34);
-            this.btn_xoa.TabIndex = 3;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_them.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.Location = new System.Drawing.Point(139, 17);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(100, 34);
+            this.btn_them.TabIndex = 1;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // btn_nhapmoi
+            // 
+            this.btn_nhapmoi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nhapmoi.Location = new System.Drawing.Point(19, 17);
+            this.btn_nhapmoi.Name = "btn_nhapmoi";
+            this.btn_nhapmoi.Size = new System.Drawing.Size(100, 34);
+            this.btn_nhapmoi.TabIndex = 0;
+            this.btn_nhapmoi.Text = "Nhập mới";
+            this.btn_nhapmoi.UseVisualStyleBackColor = true;
+            this.btn_nhapmoi.Click += new System.EventHandler(this.btn_nhapmoi_Click);
             // 
             // Grid_Sinhvien
             // 
@@ -262,6 +258,19 @@ namespace QLDSV
             this.btn_thoat.TabIndex = 3;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            // 
+            // lst_gioitinh
+            // 
+            this.lst_gioitinh.FormattingEnabled = true;
+            this.lst_gioitinh.ItemHeight = 20;
+            this.lst_gioitinh.Items.AddRange(new object[] {
+            "0",
+            "1"});
+            this.lst_gioitinh.Location = new System.Drawing.Point(647, 68);
+            this.lst_gioitinh.Name = "lst_gioitinh";
+            this.lst_gioitinh.Size = new System.Drawing.Size(234, 24);
+            this.lst_gioitinh.TabIndex = 12;
             // 
             // Frm_SinhVien
             // 
@@ -276,6 +285,7 @@ namespace QLDSV
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_SinhVien";
             this.Text = "Frm_SinhVien";
+            this.Load += new System.EventHandler(this.Frm_SinhVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -294,7 +304,6 @@ namespace QLDSV
         private System.Windows.Forms.Label lbl_quequan;
         private System.Windows.Forms.Label lbl_gioitinh;
         private System.Windows.Forms.Label lbl_ngaysinh;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox cbo_malop;
         private System.Windows.Forms.TextBox txt_quequan;
         private System.Windows.Forms.DateTimePicker ngaysinh;
@@ -307,5 +316,6 @@ namespace QLDSV
         private System.Windows.Forms.Button btn_nhapmoi;
         private System.Windows.Forms.DataGridView Grid_Sinhvien;
         private System.Windows.Forms.Button btn_thoat;
+        private System.Windows.Forms.ListBox lst_gioitinh;
     }
 }
