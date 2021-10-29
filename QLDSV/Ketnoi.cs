@@ -24,7 +24,7 @@ namespace QLDSV
        // Data Source = DESKTOP - RU5LL1M\MAYA0;Integrated Security = SSPI; Initial Catalog = QL_DIEM_SV
         public void KetNoi_DuLieu()
         {
-            string strKetNoi = @"Data Source=DESKTOP-RU5LL1M\MAYA0;Initial Catalog=QL_DIEM_SV;Integrated Security=True";
+            string strKetNoi = @"Data Source=MINHX0AWN;Initial Catalog=QL_DIEM_SV;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
