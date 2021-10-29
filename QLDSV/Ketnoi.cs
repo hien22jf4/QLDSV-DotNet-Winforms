@@ -21,7 +21,9 @@ namespace QLDSV
          */
         //string strKetNoi = @"Data Source=MINHX0AWN;Initial Catalog=QL_Diem_SV;Integrated Security=True";
         //MINHX0AWN
-       // Data Source = DESKTOP - RU5LL1M\MAYA0;Integrated Security = SSPI; Initial Catalog = QL_DIEM_SV
+        // string strKetNoi = @"Data Source=DESKTOP-0I1V82C\GIANG;Initial Catalog=QL_DIEM_SV;Integrated Security=True";
+
+        //string strKetNoi = @"Data Source=DESKTOP-RU5LL1M\MAYA0;Initial Catalog=QL_DIEM_SV;Integrated Security=True";
         public void KetNoi_DuLieu()
         {
             string strKetNoi = @"Data Source=MINHX0AWN;Initial Catalog=QL_DIEM_SV;Integrated Security=True";

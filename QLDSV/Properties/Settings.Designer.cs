@@ -33,5 +33,16 @@ namespace QLDSV.Properties {
                 return ((string)(this["QLSV"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0I1V82C\\GIANG;Initial Catalog=QL_DIEM_SV;Integrated Security=" +
+            "True")]
+        public string QL_DIEM_SVConnectionString {
+            get {
+                return ((string)(this["QL_DIEM_SVConnectionString"]));
+            }
+        }
     }
 }

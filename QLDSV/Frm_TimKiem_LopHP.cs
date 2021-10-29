@@ -99,5 +99,9 @@ namespace QLDSV
             dataGridView1.DataSource = dta;
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

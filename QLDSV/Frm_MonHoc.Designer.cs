@@ -45,6 +45,7 @@ namespace QLDSV
             this.lblmamon = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.cbomakhoa = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMonHoc)).BeginInit();
@@ -55,7 +56,7 @@ namespace QLDSV
             // txttenmon
             // 
             this.txttenmon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttenmon.Location = new System.Drawing.Point(690, 43);
+            this.txttenmon.Location = new System.Drawing.Point(727, 89);
             this.txttenmon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttenmon.Name = "txttenmon";
             this.txttenmon.Size = new System.Drawing.Size(232, 30);
@@ -64,7 +65,7 @@ namespace QLDSV
             // txtmamon
             // 
             this.txtmamon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmamon.Location = new System.Drawing.Point(207, 46);
+            this.txtmamon.Location = new System.Drawing.Point(257, 89);
             this.txtmamon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtmamon.Name = "txtmamon";
             this.txtmamon.Size = new System.Drawing.Size(180, 30);
@@ -74,7 +75,7 @@ namespace QLDSV
             // 
             this.lbmakhoa.AutoSize = true;
             this.lbmakhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbmakhoa.Location = new System.Drawing.Point(89, 118);
+            this.lbmakhoa.Location = new System.Drawing.Point(105, 156);
             this.lbmakhoa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbmakhoa.Name = "lbmakhoa";
             this.lbmakhoa.Size = new System.Drawing.Size(84, 22);
@@ -85,7 +86,7 @@ namespace QLDSV
             // 
             this.lblsotinchi.AutoSize = true;
             this.lblsotinchi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsotinchi.Location = new System.Drawing.Point(554, 115);
+            this.lblsotinchi.Location = new System.Drawing.Point(591, 156);
             this.lblsotinchi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsotinchi.Name = "lblsotinchi";
             this.lblsotinchi.Size = new System.Drawing.Size(91, 22);
@@ -95,10 +96,10 @@ namespace QLDSV
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridViewMonHoc);
-            this.panel1.Location = new System.Drawing.Point(18, 258);
+            this.panel1.Location = new System.Drawing.Point(18, 310);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1164, 372);
+            this.panel1.Size = new System.Drawing.Size(1160, 311);
             this.panel1.TabIndex = 18;
             // 
             // dataGridViewMonHoc
@@ -111,13 +112,14 @@ namespace QLDSV
             this.dataGridViewMonHoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewMonHoc.Name = "dataGridViewMonHoc";
             this.dataGridViewMonHoc.RowHeadersWidth = 62;
-            this.dataGridViewMonHoc.Size = new System.Drawing.Size(1160, 363);
+            this.dataGridViewMonHoc.Size = new System.Drawing.Size(1156, 363);
             this.dataGridViewMonHoc.TabIndex = 0;
+            this.dataGridViewMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMonHoc_CellContentClick);
             // 
             // txtsotinchi
             // 
             this.txtsotinchi.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsotinchi.Location = new System.Drawing.Point(690, 107);
+            this.txtsotinchi.Location = new System.Drawing.Point(727, 153);
             this.txtsotinchi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtsotinchi.Name = "txtsotinchi";
             this.txtsotinchi.Size = new System.Drawing.Size(124, 30);
@@ -127,7 +129,7 @@ namespace QLDSV
             // 
             this.lbltenmon.AutoSize = true;
             this.lbltenmon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltenmon.Location = new System.Drawing.Point(561, 47);
+            this.lbltenmon.Location = new System.Drawing.Point(591, 92);
             this.lbltenmon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltenmon.Name = "lbltenmon";
             this.lbltenmon.Size = new System.Drawing.Size(84, 22);
@@ -140,7 +142,7 @@ namespace QLDSV
             this.panel2.Controls.Add(this.btnchapnhat);
             this.panel2.Controls.Add(this.btnthem);
             this.panel2.Controls.Add(this.btntaomoi);
-            this.panel2.Location = new System.Drawing.Point(351, 192);
+            this.panel2.Location = new System.Drawing.Point(350, 228);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(498, 57);
@@ -198,7 +200,7 @@ namespace QLDSV
             // 
             this.lblmamon.AutoSize = true;
             this.lblmamon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmamon.Location = new System.Drawing.Point(93, 49);
+            this.lblmamon.Location = new System.Drawing.Point(109, 89);
             this.lblmamon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmamon.Name = "lblmamon";
             this.lblmamon.Size = new System.Drawing.Size(80, 22);
@@ -219,6 +221,7 @@ namespace QLDSV
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.cbomakhoa);
             this.panel3.Controls.Add(this.txtsotinchi);
             this.panel3.Controls.Add(this.txttenmon);
@@ -230,14 +233,24 @@ namespace QLDSV
             this.panel3.Location = new System.Drawing.Point(18, 19);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1160, 163);
+            this.panel3.Size = new System.Drawing.Size(1160, 199);
             this.panel3.TabIndex = 20;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(429, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(273, 26);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "THÔNG TIN MÔN HỌC";
             // 
             // cbomakhoa
             // 
             this.cbomakhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbomakhoa.FormattingEnabled = true;
-            this.cbomakhoa.Location = new System.Drawing.Point(207, 113);
+            this.cbomakhoa.Location = new System.Drawing.Point(257, 153);
             this.cbomakhoa.Name = "cbomakhoa";
             this.cbomakhoa.Size = new System.Drawing.Size(180, 28);
             this.cbomakhoa.TabIndex = 6;
@@ -282,5 +295,6 @@ namespace QLDSV
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox cbomakhoa;
+        private System.Windows.Forms.Label label3;
     }
 }

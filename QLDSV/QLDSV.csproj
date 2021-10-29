@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,11 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Frm_ChungChi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Frm_ChungChi.Designer.cs">
+      <DependentUpon>Frm_ChungChi.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_DangNhap.cs">
       <SubType>Form</SubType>
@@ -93,6 +108,12 @@
     <Compile Include="Frm_MonHoc.Designer.cs">
       <DependentUpon>Frm_MonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SinhVien.Designer.cs">
+      <DependentUpon>Frm_SinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_TimKiem_GiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +150,12 @@
     <Compile Include="Frm_TimKiem_MonHoc.Designer.cs">
       <DependentUpon>Frm_TimKiem_MonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_TimKiem_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TimKiem_SinhVien.Designer.cs">
+      <DependentUpon>Frm_TimKiem_SinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_TraCuuDiemHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,8 +165,13 @@
     <Compile Include="Ketnoi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="QL_DIEM_SVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_DIEM_SVDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_ChungChi.resx">
+      <DependentUpon>Frm_ChungChi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DangNhap.resx">
       <DependentUpon>Frm_DangNhap.cs</DependentUpon>
@@ -159,6 +191,9 @@
     <EmbeddedResource Include="Frm_MonHoc.resx">
       <DependentUpon>Frm_MonHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SinhVien.resx">
+      <DependentUpon>Frm_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_TimKiem_GiangVien.resx">
       <DependentUpon>Frm_TimKiem_GiangVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TimKiem_MonHoc.resx">
       <DependentUpon>Frm_TimKiem_MonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TimKiem_SinhVien.resx">
+      <DependentUpon>Frm_TimKiem_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -212,7 +250,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QL_DIEM_SVDataSet.xsc">
+      <DependentUpon>QL_DIEM_SVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_DIEM_SVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_DIEM_SVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_DIEM_SVDataSet.xss">
+      <DependentUpon>QL_DIEM_SVDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\key.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
