@@ -53,12 +53,12 @@ namespace QLDSV
             this.Grid_Chungchi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Grid_Chungchi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.Grid_Chungchi.ColumnHeadersHeight = 34;
-            this.Grid_Chungchi.Location = new System.Drawing.Point(51, 276);
+            this.Grid_Chungchi.Location = new System.Drawing.Point(83, 277);
             this.Grid_Chungchi.Margin = new System.Windows.Forms.Padding(4);
             this.Grid_Chungchi.Name = "Grid_Chungchi";
             this.Grid_Chungchi.RowHeadersWidth = 62;
             this.Grid_Chungchi.RowTemplate.Height = 24;
-            this.Grid_Chungchi.Size = new System.Drawing.Size(958, 242);
+            this.Grid_Chungchi.Size = new System.Drawing.Size(958, 327);
             this.Grid_Chungchi.TabIndex = 0;
             this.Grid_Chungchi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_Chungchi_CellContentClick);
             // 
@@ -68,7 +68,7 @@ namespace QLDSV
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btn_them);
             this.panel2.Controls.Add(this.btn_nhapmoi);
-            this.panel2.Location = new System.Drawing.Point(230, 188);
+            this.panel2.Location = new System.Drawing.Point(272, 188);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(497, 71);
             this.panel2.TabIndex = 4;
@@ -124,7 +124,7 @@ namespace QLDSV
             this.panel1.Controls.Add(this.lbl_tenchungchi);
             this.panel1.Controls.Add(this.lbl_machungchi);
             this.panel1.Controls.Add(this.lbl_chungchi);
-            this.panel1.Location = new System.Drawing.Point(51, 23);
+            this.panel1.Location = new System.Drawing.Point(83, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 145);
@@ -177,7 +177,7 @@ namespace QLDSV
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(892, 540);
+            this.btn_thoat.Location = new System.Drawing.Point(910, 630);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(116, 32);
             this.btn_thoat.TabIndex = 6;
@@ -189,7 +189,7 @@ namespace QLDSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 590);
+            this.ClientSize = new System.Drawing.Size(1204, 701);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.Grid_Chungchi);
             this.Controls.Add(this.panel2);

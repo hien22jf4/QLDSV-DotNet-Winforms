@@ -44,7 +44,7 @@ namespace QLDSV
         private void Frm_ChungChi_Load(object sender, EventArgs e)
         {
             CHUNGCHI();
-            Grid_Chungchi.Hide();
+            btn_them.Enabled = false;
         }
 
         private void btn_nhapmoi_Click(object sender, EventArgs e)
