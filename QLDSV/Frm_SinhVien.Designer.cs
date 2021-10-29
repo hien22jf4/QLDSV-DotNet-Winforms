@@ -70,7 +70,7 @@ namespace QLDSV
             this.panel1.Controls.Add(this.lbl_tensv);
             this.panel1.Controls.Add(this.lbl_masv);
             this.panel1.Controls.Add(this.lbl_sinhvien);
-            this.panel1.Location = new System.Drawing.Point(75, 13);
+            this.panel1.Location = new System.Drawing.Point(128, 29);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 239);
@@ -191,7 +191,7 @@ namespace QLDSV
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btn_them);
             this.panel2.Controls.Add(this.btn_nhapmoi);
-            this.panel2.Location = new System.Drawing.Point(300, 275);
+            this.panel2.Location = new System.Drawing.Point(343, 297);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(497, 71);
             this.panel2.TabIndex = 1;
@@ -243,7 +243,7 @@ namespace QLDSV
             // Grid_Sinhvien
             // 
             this.Grid_Sinhvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grid_Sinhvien.Location = new System.Drawing.Point(75, 362);
+            this.Grid_Sinhvien.Location = new System.Drawing.Point(128, 388);
             this.Grid_Sinhvien.Name = "Grid_Sinhvien";
             this.Grid_Sinhvien.RowHeadersWidth = 51;
             this.Grid_Sinhvien.RowTemplate.Height = 24;
@@ -252,7 +252,7 @@ namespace QLDSV
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(921, 607);
+            this.btn_thoat.Location = new System.Drawing.Point(974, 638);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(112, 34);
             this.btn_thoat.TabIndex = 3;
@@ -276,7 +276,7 @@ namespace QLDSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1079, 653);
+            this.ClientSize = new System.Drawing.Size(1204, 701);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.Grid_Sinhvien);
             this.Controls.Add(this.panel2);
