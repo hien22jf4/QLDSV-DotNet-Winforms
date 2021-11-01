@@ -67,6 +67,7 @@ namespace QLDSV
             this.dataGridViewKhoa.RowHeadersWidth = 62;
             this.dataGridViewKhoa.Size = new System.Drawing.Size(1160, 363);
             this.dataGridViewKhoa.TabIndex = 0;
+            this.dataGridViewKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewKhoa_CellContentClick);
             // 
             // btntaomoi
             // 
@@ -219,7 +220,7 @@ namespace QLDSV
             // txtmakhoa
             // 
             this.txtmakhoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmakhoa.Location = new System.Drawing.Point(152, 87);
+            this.txtmakhoa.Location = new System.Drawing.Point(142, 87);
             this.txtmakhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtmakhoa.Name = "txtmakhoa";
             this.txtmakhoa.Size = new System.Drawing.Size(180, 30);
