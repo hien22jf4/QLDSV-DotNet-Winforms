@@ -47,8 +47,8 @@ namespace QLDSV
             ngaysinh.DataBindings.Clear();
             ngaysinh.DataBindings.Add("Text", Grid_Sinhvien.DataSource, "dob_sv");
 
-            lst_gioitinh.DataBindings.Clear();
-            lst_gioitinh.DataBindings.Add("Text", Grid_Sinhvien.DataSource, "gioi_tinh");
+            txt_gioitinh.DataBindings.Clear();
+            txt_gioitinh.DataBindings.Add("Text", Grid_Sinhvien.DataSource, "gioi_tinh");
 
             txt_quequan.DataBindings.Clear();
             txt_quequan.DataBindings.Add("Text", Grid_Sinhvien.DataSource, "que_quan");
@@ -76,7 +76,7 @@ namespace QLDSV
             }
             else
             {
-                string sql_change = "update SINHVIEN set ten_sv='" + txt_tensv.Text + "',dob_sv ='" + ngaysinh.Value + "' ,gioi_tinh ='" + lst_gioitinh.Items + "' ,que_quan ='" + txt_quequan.Text + "' ,id_lop ='" + cbo_malop.Text + "' where id_sv='" + txt_masv.Text + "'";
+                string sql_change = "update SINHVIEN set ten_sv='" + txt_tensv.Text + "',dob_sv ='" + ngaysinh.Value + "' ,gioi_tinh ='" + txt_gioitinh.Text + "' ,que_quan ='" + txt_quequan.Text + "' ,id_lop ='" + cbo_malop.Text + "' where id_sv='" + txt_masv.Text + "'";
                 kn.Thucthi(sql_change);
                 SINHVIEN();
             }
@@ -111,7 +111,7 @@ namespace QLDSV
             else
             {
                 string sql_luu = "Insert into SINHVIEN Values(' " + txt_masv.Text + "', '" + txt_tensv.Text + "', '" + ngaysinh.Value + "', '" +
-                                      lst_gioitinh.Items + "', '" + txt_quequan.Text + "','" + cbo_malop.Text + "')";
+                                      txt_gioitinh.Text + "', '" + txt_quequan.Text + "','" + cbo_malop.Text + "')";
 
                 kn.Thucthi(sql_luu);
                 SINHVIEN();
@@ -131,6 +131,11 @@ namespace QLDSV
             DialogResult thongbao;
             thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (thongbao == DialogResult.OK) this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

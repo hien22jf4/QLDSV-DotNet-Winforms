@@ -49,7 +49,7 @@ namespace QLDSV
             this.btn_nhapmoi = new System.Windows.Forms.Button();
             this.Grid_Sinhvien = new System.Windows.Forms.DataGridView();
             this.btn_thoat = new System.Windows.Forms.Button();
-            this.lst_gioitinh = new System.Windows.Forms.ListBox();
+            this.txt_gioitinh = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Sinhvien)).BeginInit();
@@ -57,7 +57,7 @@ namespace QLDSV
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lst_gioitinh);
+            this.panel1.Controls.Add(this.txt_gioitinh);
             this.panel1.Controls.Add(this.cbo_malop);
             this.panel1.Controls.Add(this.txt_quequan);
             this.panel1.Controls.Add(this.ngaysinh);
@@ -75,6 +75,7 @@ namespace QLDSV
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 239);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cbo_malop
             // 
@@ -260,17 +261,12 @@ namespace QLDSV
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
-            // lst_gioitinh
+            // txt_gioitinh
             // 
-            this.lst_gioitinh.FormattingEnabled = true;
-            this.lst_gioitinh.ItemHeight = 20;
-            this.lst_gioitinh.Items.AddRange(new object[] {
-            "0",
-            "1"});
-            this.lst_gioitinh.Location = new System.Drawing.Point(647, 68);
-            this.lst_gioitinh.Name = "lst_gioitinh";
-            this.lst_gioitinh.Size = new System.Drawing.Size(234, 24);
-            this.lst_gioitinh.TabIndex = 12;
+            this.txt_gioitinh.Location = new System.Drawing.Point(647, 65);
+            this.txt_gioitinh.Name = "txt_gioitinh";
+            this.txt_gioitinh.Size = new System.Drawing.Size(235, 27);
+            this.txt_gioitinh.TabIndex = 12;
             // 
             // Frm_SinhVien
             // 
@@ -316,6 +312,6 @@ namespace QLDSV
         private System.Windows.Forms.Button btn_nhapmoi;
         private System.Windows.Forms.DataGridView Grid_Sinhvien;
         private System.Windows.Forms.Button btn_thoat;
-        private System.Windows.Forms.ListBox lst_gioitinh;
+        private System.Windows.Forms.TextBox txt_gioitinh;
     }
 }
