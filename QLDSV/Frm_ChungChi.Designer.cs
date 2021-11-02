@@ -134,14 +134,14 @@ namespace QLDSV
             // 
             this.txt_tenchungchi.Location = new System.Drawing.Point(647, 73);
             this.txt_tenchungchi.Name = "txt_tenchungchi";
-            this.txt_tenchungchi.Size = new System.Drawing.Size(235, 27);
+            this.txt_tenchungchi.Size = new System.Drawing.Size(235, 23);
             this.txt_tenchungchi.TabIndex = 12;
             // 
             // txt_machungchi
             // 
             this.txt_machungchi.Location = new System.Drawing.Point(179, 75);
             this.txt_machungchi.Name = "txt_machungchi";
-            this.txt_machungchi.Size = new System.Drawing.Size(246, 27);
+            this.txt_machungchi.Size = new System.Drawing.Size(246, 23);
             this.txt_machungchi.TabIndex = 7;
             // 
             // lbl_tenchungchi
@@ -150,7 +150,7 @@ namespace QLDSV
             this.lbl_tenchungchi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tenchungchi.Location = new System.Drawing.Point(519, 73);
             this.lbl_tenchungchi.Name = "lbl_tenchungchi";
-            this.lbl_tenchungchi.Size = new System.Drawing.Size(104, 19);
+            this.lbl_tenchungchi.Size = new System.Drawing.Size(91, 16);
             this.lbl_tenchungchi.TabIndex = 4;
             this.lbl_tenchungchi.Text = "Tên chứng chỉ";
             // 
@@ -160,7 +160,7 @@ namespace QLDSV
             this.lbl_machungchi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_machungchi.Location = new System.Drawing.Point(42, 78);
             this.lbl_machungchi.Name = "lbl_machungchi";
-            this.lbl_machungchi.Size = new System.Drawing.Size(101, 19);
+            this.lbl_machungchi.Size = new System.Drawing.Size(87, 16);
             this.lbl_machungchi.TabIndex = 1;
             this.lbl_machungchi.Text = "Mã chứng chỉ";
             // 
@@ -171,7 +171,7 @@ namespace QLDSV
             this.lbl_chungchi.Location = new System.Drawing.Point(265, 16);
             this.lbl_chungchi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_chungchi.Name = "lbl_chungchi";
-            this.lbl_chungchi.Size = new System.Drawing.Size(244, 23);
+            this.lbl_chungchi.Size = new System.Drawing.Size(196, 19);
             this.lbl_chungchi.TabIndex = 0;
             this.lbl_chungchi.Text = "THÔNG TIN CHỨNG CHỈ\r\n";
             // 
@@ -187,9 +187,9 @@ namespace QLDSV
             // 
             // Frm_ChungChi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1204, 701);
+            this.ClientSize = new System.Drawing.Size(907, 394);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.Grid_Chungchi);
             this.Controls.Add(this.panel2);
