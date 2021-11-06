@@ -19,35 +19,41 @@ namespace QLDSV
         }
         Ketnoi kn = new Ketnoi();
 
-        private void GIANGVIEN()
+        public void GIANGVIEN()
         {
-            DataTable dta = new DataTable(); dta = kn.Lay_DuLieu("Select *from GIANGVIEN");
-            dataGridViewGiangvien.DataSource = dta;
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DuLieu("select * From GIANGVIEN");
+            Gridgiangvien.DataSource = dta;
             HIENTHIDULIEU();
         }
         private void BANGKHOA()
         {
-            DataTable dta = new DataTable(); dta = kn.Lay_DuLieu("Select *from KHOA");
-            cbomakhoa.DataSource = dta;
-            cbomakhoa.DisplayMember = "id_khoa";
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DuLieu("select * From KHOA");
+            cbo_makhoa.DataSource = dta;
+            cbo_makhoa.DisplayMember = "id_khoa";
+            cbo_makhoa.ValueMember = "id_khoa";
         }
 
         private void HIENTHIDULIEU()
         {
             txtmagv.DataBindings.Clear();
-            txtmagv.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "id_GV");
+            txtmagv.DataBindings.Add("Text", Gridgiangvien.DataSource, "id_GV");
+
             txttengv.DataBindings.Clear();
-            txttengv.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "ten_GV");
-            lstgioitinh.DataBindings.Clear();
-            lstgioitinh.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "gioi_tinh");
+            txttengv.DataBindings.Add("Text", Gridgiangvien.DataSource, "ten_GV");
+
             ngaysinh.DataBindings.Clear();
-            ngaysinh.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "dob_gv");
+            ngaysinh.DataBindings.Add("Text", Gridgiangvien.DataSource, "dob_gv");
+
+            txtgioitinh.DataBindings.Clear();
+            txtgioitinh.DataBindings.Add("Text", Gridgiangvien.DataSource, "gioi_tinh");
+
             txtsodt.DataBindings.Clear();
-            txtsodt.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "So_dien_thoai");
-            txtquequan.DataBindings.Clear();
-            txtquequan.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "quequan");
-            cbomakhoa.DataBindings.Clear();
-            cbomakhoa.DataBindings.Add("Text", dataGridViewGiangvien.DataSource, "id_khoa");
+            txtsodt.DataBindings.Add("Text", Gridgiangvien.DataSource, "So_dien_thoai");
+
+            cbo_makhoa.DataBindings.Clear();
+            cbo_makhoa.DataBindings.Add("Text", Gridgiangvien.DataSource, "id_khoa");
         }
 
 
@@ -55,38 +61,32 @@ namespace QLDSV
         {
             GIANGVIEN();
             BANGKHOA();
-            dataGridViewGiangvien.Hide();
+            Gridgiangvien.Hide();
         }
 
-        private void btntaomoi_Click(object sender, EventArgs e)
-        {
-            txtmagv.Text = txtmagv.Text = txtsodt.Text = lstgioitinh.Text = txtquequan.Text = "";
-            ngaysinh.Value = DateTime.Today;
-            dataGridViewGiangvien.Show();
-        }
-
-        private void btnthem_Click(object sender, EventArgs e)
+        private void btn_them_Click(object sender, EventArgs e)
         {
             string strCheck = "Select id_GV from GIANGVIEN where id_GV = '" + txtmagv.Text + "'";
             SqlCommand cmd = new SqlCommand(strCheck, kn.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
             if (doc_dl.Read() == true)
             {
-                MessageBox.Show("Mã giảng viên  này đã tồn tại, nhập lại mã khác", "Thông báo");
+                MessageBox.Show("Mã giảng viên này đã tồn tại, nhập lại mã khác", "Thông báo");
                 txtmagv.Focus();
                 doc_dl.Close();
                 doc_dl.Dispose();
             }
             else
             {
-                string sql_luu = "Insert into GIANGVIEN Values(' " + txtmagv.Text + "', '" + txttengv.Text + "','" + cbomakhoa.Text + "', '" + txtquequan.Text + "', '" + txtsodt.Text + "', '" + lstgioitinh.Text + "' , '" + ngaysinh.Value + "')";
+                string sql_luu = "Insert into GIANGVIEN Values(' " + txtmagv.Text + "', '" + txttengv.Text + "',  '" +
+                                      txtgioitinh.Text + "','" + ngaysinh.Value + "', '" + txtsodt.Text + "','" + txtquequan.Text + "','" + cbo_makhoa.Text + "')";
 
                 kn.Thucthi(sql_luu);
                 GIANGVIEN();
             }
         }
 
-        private void btnchapnhat_Click(object sender, EventArgs e)
+        private void btn_capnhat_Click(object sender, EventArgs e)
         {
             string strCheck = "Select id_GV from GIANGVIEN where id_GV = '" + txtmagv.Text + "'";
             SqlCommand cmd = new SqlCommand(strCheck, kn.cnn);
@@ -100,30 +100,32 @@ namespace QLDSV
             }
             else
             {
-                string sql_change = "update GIANGVIEN set ten_GV='" + txttengv.Text + "',dob_gv ='" + ngaysinh.Value + "',quequan ='" + txtquequan.Text + "' ,So_dien_thoai ='" + txtsodt.Text + "' ,gioi_tinh ='" + lstgioitinh.Text + "' where id_GV='" + txtmagv.Text + "'";
+                string sql_change = "update GIANGVIEN set ten_GV='" + txtmagv.Text + "',dob_gv ='" + ngaysinh.Value + "' ,gioi_tinh ='" + txtgioitinh.Text + "' ,So_dien_thoai ='" + txtsodt.Text + "' ,que_quan ='" + txtquequan.Text + "' ,id_khoa ='" + cbo_makhoa.Text + "' where id_GV='" + txtmagv.Text + "'";
                 kn.Thucthi(sql_change);
                 GIANGVIEN();
             }
         }
 
-        private void btnxoa_Click(object sender, EventArgs e)
+        private void btn_xoa_Click(object sender, EventArgs e)
         {
             string sql_del = "delete GIANGVIEN where id_GV = '" + txtmagv.Text + "'";
             DataTable dta = new DataTable(); dta = kn.Lay_DuLieu(sql_del);
-            dataGridViewGiangvien.DataSource = dta;
+            Gridgiangvien.DataSource = dta;
             GIANGVIEN();
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
+        private void btn_thoat_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
             thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (thongbao == DialogResult.OK) this.Close();
         }
 
-        private void dataGridViewGiangvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_nhapmoi_Click(object sender, EventArgs e)
         {
-            HIENTHIDULIEU();
+            txtmagv.Text = txttengv.Text = txtquequan.Text = txtgioitinh.Text = txtsodt.Text = "";
+            ngaysinh.Value = DateTime.Today;
+            Gridgiangvien.Show();
         }
     }
 }
