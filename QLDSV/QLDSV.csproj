@@ -241,6 +241,9 @@
     <EmbeddedResource Include="Frm_TimKiem_SinhVien.resx">
       <DependentUpon>Frm_TimKiem_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TraCuuDiemHocPhan.resx">
+      <DependentUpon>Frm_TraCuuDiemHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
