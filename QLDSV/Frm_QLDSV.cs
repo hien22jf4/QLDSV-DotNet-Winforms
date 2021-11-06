@@ -171,5 +171,17 @@ namespace QLDSV
             Form frm = new Frm_GiangVien();
             frm.Show();
         }
+
+        private void lỚPCHÍNHQUYToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BaoCaoLopCQ();
+            frm.Show();
+        }
+
+        private void lỚPHỌCPHẦNToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form frm = new FrmBaoCaoLopHP();
+            frm.Show();
+        }
     }
 }

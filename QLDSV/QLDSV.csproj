@@ -48,8 +48,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,10 +68,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCaoLopCQ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoLopCQ.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoLopHP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoLopHP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSSV_CQ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSV_CQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCaoLopHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaoCaoLopHP.Designer.cs">
+      <DependentUpon>FrmBaoCaoLopHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BaoCaoDanhSachSVCQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCaoDanhSachSVCQ.Designer.cs">
+      <DependentUpon>Frm_BaoCaoDanhSachSVCQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BaoCaoLopCQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaoCaoLopCQ.Designer.cs">
+      <DependentUpon>Frm_BaoCaoLopCQ.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ChungChi.cs">
       <SubType>Form</SubType>
@@ -170,6 +212,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEM_SVDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCaoLopCQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoLopCQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoLopHP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoLopHP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSV_CQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSSV_CQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCaoLopHP.resx">
+      <DependentUpon>FrmBaoCaoLopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCaoDanhSachSVCQ.resx">
+      <DependentUpon>Frm_BaoCaoDanhSachSVCQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaoCaoLopCQ.resx">
+      <DependentUpon>Frm_BaoCaoLopCQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_ChungChi.resx">
       <DependentUpon>Frm_ChungChi.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +337,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
