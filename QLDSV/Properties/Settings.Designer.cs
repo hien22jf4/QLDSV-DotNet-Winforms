@@ -44,5 +44,16 @@ namespace QLDSV.Properties {
                 return ((string)(this["QL_DIEM_SVConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-RU5LL1M\\MAYA0;Integrated Security=SSPI;Ini" +
+            "tial Catalog=TEST_BTL")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+        }
     }
 }

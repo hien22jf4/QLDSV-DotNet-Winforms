@@ -40,7 +40,13 @@ namespace QLDSV
             cbomakhoa.DataBindings.Add("Text", dataGridViewMonHoc.DataSource, "id_khoa");
             txtsotinchi.DataBindings.Clear();
             txtsotinchi.DataBindings.Add("Text", dataGridViewMonHoc.DataSource, "so_tin_chi");
-            
+            txtdiemcc.DataBindings.Clear();
+            txtdiemcc.DataBindings.Add("Text", dataGridViewMonHoc.DataSource, "he_so_cc");
+            txtdiemgk.DataBindings.Clear();
+            txtdiemgk.DataBindings.Add("Text", dataGridViewMonHoc.DataSource, "he_so_gk");
+            txtdiemck.DataBindings.Clear();
+            txtdiemck.DataBindings.Add("Text", dataGridViewMonHoc.DataSource, "he_so_ck");
+
         }
         private void Frm_MonHoc_Load(object sender, EventArgs e)
         {
@@ -51,7 +57,7 @@ namespace QLDSV
 
         private void btntaomoi_Click(object sender, EventArgs e)
         {
-            txtmamon.Text = txttenmon.Text = txtsotinchi.Text = "";
+            txtmamon.Text = txttenmon.Text = txtsotinchi.Text = txtdiemcc.Text = txtdiemck.Text = txtdiemgk.Text = "";
             dataGridViewMonHoc.Show();
         }
 
@@ -70,7 +76,7 @@ namespace QLDSV
             }
             else
             {
-                string sql_luu = "Insert into MONHOC Values(' " + txtmamon.Text + "', '" + txttenmon.Text + "','" + cbomakhoa.Text + "', '" + txtsotinchi.Text +"')";
+                string sql_luu = "Insert into MONHOC Values(' " + txtmamon.Text + "', '" + txttenmon.Text + "','" + cbomakhoa.Text + "','" + txtsotinchi.Text + "', '" + txtdiemcc.Text + "','" + txtdiemgk.Text + "','" + txtdiemck.Text + "')";
 
                 kn.Thucthi(sql_luu);
                MONHOC();
@@ -91,7 +97,7 @@ namespace QLDSV
             }
             else
             {
-                string sql_change = "update MONHOC set ten_mon='" + txttenmon.Text + "',so_tin_chi ='" + txtsotinchi.Text + "' where id_mon='" + txtmamon.Text + "'";
+                string sql_change = "update MONHOC set ten_mon='" + txttenmon.Text + "',he_so_cc='" + txtdiemcc.Text + "',he_so_gk='" + txtdiemgk.Text + "',he_so_ck='" + txtdiemck.Text + "',so_tin_chi ='" + txtsotinchi.Text + "' where id_mon='" + txtmamon.Text + "'";
                 kn.Thucthi(sql_change);
                 MONHOC();
             }

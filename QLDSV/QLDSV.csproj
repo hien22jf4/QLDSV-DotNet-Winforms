@@ -48,11 +48,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -68,45 +68,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaoCaoLopCQ.cs">
+    <Compile Include="BCDIEMSV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BaoCaoLopCQ.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="BaoCaoLopHP.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BaoCaoLopHP.rpt</DependentUpon>
+      <DependentUpon>BCDIEMSV.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DataSet1.Designer.cs">
+    <Compile Include="BC_TTGV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DSSV_CQ.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DSSV_CQ.rpt</DependentUpon>
+      <DependentUpon>BC_TTGV.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FrmBaoCaoLopHP.cs">
+    <Compile Include="BC_TTK.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_TTK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_TTMH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_TTMH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmBCDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBaoCaoLopHP.Designer.cs">
-      <DependentUpon>FrmBaoCaoLopHP.cs</DependentUpon>
+    <Compile Include="FrmBCDiem.Designer.cs">
+      <DependentUpon>FrmBCDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_BaoCaoDanhSachSVCQ.cs">
+    <Compile Include="Frm_BC_GiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_BaoCaoDanhSachSVCQ.Designer.cs">
-      <DependentUpon>Frm_BaoCaoDanhSachSVCQ.cs</DependentUpon>
+    <Compile Include="Frm_BC_GiangVien.Designer.cs">
+      <DependentUpon>Frm_BC_GiangVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_BaoCaoLopCQ.cs">
+    <Compile Include="Frm_BC_Khoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_BaoCaoLopCQ.Designer.cs">
-      <DependentUpon>Frm_BaoCaoLopCQ.cs</DependentUpon>
+    <Compile Include="Frm_BC_Khoa.Designer.cs">
+      <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_MonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_MonHoc.Designer.cs">
+      <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ChungChi.cs">
       <SubType>Form</SubType>
@@ -212,26 +220,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DIEM_SVDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCaoLopCQ.rpt">
+    <Compile Include="Test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BCDIEMSV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BaoCaoLopCQ.cs</LastGenOutput>
+      <LastGenOutput>BCDIEMSV.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BaoCaoLopHP.rpt">
+    <EmbeddedResource Include="BC_TTGV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BaoCaoLopHP.cs</LastGenOutput>
+      <LastGenOutput>BC_TTGV.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="DSSV_CQ.rpt">
+    <EmbeddedResource Include="BC_TTK.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>DSSV_CQ.cs</LastGenOutput>
+      <LastGenOutput>BC_TTK.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBaoCaoLopHP.resx">
-      <DependentUpon>FrmBaoCaoLopHP.cs</DependentUpon>
+    <EmbeddedResource Include="BC_TTMH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_TTMH.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_BaoCaoDanhSachSVCQ.resx">
-      <DependentUpon>Frm_BaoCaoDanhSachSVCQ.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBCDiem.resx">
+      <DependentUpon>FrmBCDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_BaoCaoLopCQ.resx">
-      <DependentUpon>Frm_BaoCaoLopCQ.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_BC_GiangVien.resx">
+      <DependentUpon>Frm_BC_GiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_Khoa.resx">
+      <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_MonHoc.resx">
+      <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ChungChi.resx">
       <DependentUpon>Frm_ChungChi.cs</DependentUpon>
@@ -278,6 +298,9 @@
     <EmbeddedResource Include="Frm_TimKiem_SinhVien.resx">
       <DependentUpon>Frm_TimKiem_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TraCuuDiemHocPhan.resx">
+      <DependentUpon>Frm_TraCuuDiemHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -288,17 +311,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -308,6 +320,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Test.xsc">
+      <DependentUpon>Test.xsd</DependentUpon>
+    </None>
+    <None Include="Test.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Test.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Test.xss">
+      <DependentUpon>Test.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
