@@ -74,11 +74,47 @@
       <DependentUpon>BCDIEMSV.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BC_TTGV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_TTGV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_TTK.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_TTK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BC_TTMH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_TTMH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FrmBCDiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBCDiem.Designer.cs">
       <DependentUpon>FrmBCDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_GiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_GiangVien.Designer.cs">
+      <DependentUpon>Frm_BC_GiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_Khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_Khoa.Designer.cs">
+      <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_MonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_MonHoc.Designer.cs">
+      <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ChungChi.cs">
       <SubType>Form</SubType>
@@ -193,8 +229,29 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BCDIEMSV.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="BC_TTGV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_TTGV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BC_TTK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_TTK.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BC_TTMH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_TTMH.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBCDiem.resx">
       <DependentUpon>FrmBCDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_GiangVien.resx">
+      <DependentUpon>Frm_BC_GiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_Khoa.resx">
+      <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_MonHoc.resx">
+      <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ChungChi.resx">
       <DependentUpon>Frm_ChungChi.cs</DependentUpon>
