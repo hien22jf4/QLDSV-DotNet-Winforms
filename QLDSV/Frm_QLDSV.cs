@@ -174,14 +174,14 @@ namespace QLDSV
 
         private void lỚPCHÍNHQUYToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Form frm = new Frm_BaoCaoLopCQ();
-            frm.Show();
+            //Form frm = new Frm_BaoCaoLopCQ();
+            //frm.Show();
         }
 
         private void lỚPHỌCPHẦNToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Form frm = new FrmBaoCaoLopHP();
-            frm.Show();
+            //Form frm = new FrmBaoCaoLopHP();
+            //frm.Show();
         }
     }
 }
