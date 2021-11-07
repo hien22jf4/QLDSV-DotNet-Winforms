@@ -1,0 +1,180 @@
+[33mcommit 8277d2dffedc92c5498f7a84fdf7e8c7d3acbeed[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Sun Nov 7 03:27:25 2021 +0700
+
+    lỗi
+
+[33mcommit 65142b9e0b3e388f8f5b87b5dfc0352b337eea7c[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Sun Nov 7 03:22:10 2021 +0700
+
+    báo cáo lớp chính quy, lớp học phần
+
+[33mcommit b920db3be8925b963c70dcf1b07e27e491add207[m
+Merge: 15e7f0c b046e3c
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Sat Nov 6 22:49:32 2021 +0700
+
+    Merge branch 'master' of https://github.com/hien22jf4/QLDSV-DotNet-Winforms
+    
+    # Conflicts:
+    #       QLDSV/Frm_MonHoc.Designer.cs
+    #       QLDSV/Ketnoi.cs
+    #       QLDSV/Program.cs
+    #       QLDSV/QLDSV.csproj
+
+[33mcommit 15e7f0c548c9aa7838a1de74643f41684c164e59[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Sat Nov 6 22:40:45 2021 +0700
+
+    up
+
+[33mcommit b046e3ccc0e3768989a7aa7b979eb763cc8d385b[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Sat Nov 6 22:25:59 2021 +0700
+
+    3 Frm Báo cáo khoa, GV, môn học
+
+[33mcommit 7b4445b177f7e0705f50fefde7a69fa2889cf017[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Sat Nov 6 21:05:46 2021 +0700
+
+    update Môn Học, tra cứu lớp học phần
+
+[33mcommit eefda3c21c0ffd507fa2ca1679384a7e35fb1244[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Sat Nov 6 19:55:06 2021 +0700
+
+    update Giảng Viên
+
+[33mcommit 15abe1598bcec1231fb557645c6d5f2ed960bbbb[m
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Fri Nov 5 22:38:42 2021 +0700
+
+    add form Báo Cáo
+
+[33mcommit 6c3ecc0e543c2e13fafbd80d8c2980fdde73cfb2[m
+Merge: 3183bdb 63818dd
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Tue Nov 2 23:12:03 2021 +0700
+
+    Merge branch 'master' of https://github.com/hien22jf4/QLDSV-DotNet-Winforms.git
+
+[33mcommit 3183bdb6acbfd2f9d67d7823d984c391314a91eb[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Tue Nov 2 22:53:58 2021 +0700
+
+    a
+
+[33mcommit 63818ddca87583e515a80d72f7818b81745eed3a[m
+Merge: 83b247e 44b5e89
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Mon Nov 1 23:03:52 2021 +0700
+
+    Merge branch 'master' of https://github.com/hien22jf4/QLDSV-DotNet-Winforms
+
+[33mcommit 83b247e076ab7abf5560778e0b253f1041a1a471[m
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Mon Nov 1 23:03:47 2021 +0700
+
+    update form sinh viên
+
+[33mcommit 512c0647a3164e99c59d950fb52ddd788abac3e0[m
+Merge: 5d19823 44b5e89
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Fri Oct 29 18:51:57 2021 +0700
+
+    Merge branch 'master' of https://github.com/hien22jf4/QLDSV-DotNet-Winforms
+    git commit -m "."
+
+[33mcommit 5d19823c83e7c0cf94d8e86e0902d1e84772c567[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Fri Oct 29 18:51:48 2021 +0700
+
+    ...
+
+[33mcommit 44b5e896679dc65ef43818e598f32313a86516ab[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Fri Oct 29 17:15:51 2021 +0700
+
+    tim kiem mon hoc
+
+[33mcommit 8f8907ae185a6b16fc88d0852fcb4e7d9620c11c[m
+Merge: 6e8e4e3 1cf28ff
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Fri Oct 29 17:11:55 2021 +0700
+
+    Merge branch 'master' of https://github.com/hien22jf4/QLDSV-DotNet-Winforms
+
+[33mcommit 6e8e4e3f866c49dc50c05221dc5132cccafddb78[m
+Merge: cc54489 8cb93a4
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Fri Oct 29 17:11:17 2021 +0700
+
+    6 Form Giảng Viên, Khoa, Môn Học
+
+[33mcommit 1cf28ff913d5ae3cae5fe6fcd8e4dc5395b83fa8[m
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Fri Oct 29 14:05:14 2021 +0700
+
+    cập nhật form sinh viên
+
+[33mcommit 1b48d647e3a903d28e701f9c568672925b6ce8b1[m
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Fri Oct 29 13:16:35 2021 +0700
+
+    cập nhật form sinh viên
+
+[33mcommit cc544898297e4aca3cfd2b4bb44cc0678fbbfd60[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Fri Oct 29 08:42:48 2021 +0700
+
+    update Môn học, Khoa, Giảng Viên
+
+[33mcommit 8cb93a4c07b7eb2f9f34016ff12dc0126cc8c3a2[m
+Author: TruongGiang2501 <giangtb2501@gmail.com>
+Date:   Fri Oct 29 08:27:34 2021 +0700
+
+    Form sinh viên, chứng chỉ, tìm kiếm sinh viên
+
+[33mcommit c48e7b780388f4d954bca1faff16ca7ebf1c1a45[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Thu Oct 28 15:37:26 2021 +0700
+
+    frm khoa
+
+[33mcommit 6a156a3caef0f2b02913d61b28be2ecfd0c023a0[m
+Author: maineu1701 <nguyensen1702d@gmail.com>
+Date:   Thu Oct 28 10:53:09 2021 +0700
+
+    Frm khoa, môn học
+
+[33mcommit 9b6b3d0d86697cd143181b9d33ca5725f391e9b5[m
+Author: X0awn <minhntt2001hn@gmail.com>
+Date:   Tue Oct 26 20:20:37 2021 +0700
+
+    4 form liên quan đến lớp chính quy, lớp học phần
+
+[33mcommit e0ce9f63ea357fff1bd5ac43ccc6c6801d0836d1[m
+Author: Hien123 <hiennvb221001@gmail.com>
+Date:   Mon Oct 25 22:40:52 2021 +0700
+
+    Demo git commit and git push
+
+[33mcommit 6022cfa25adab39904bfbe29ac0b8fea115e2a70[m
+Author: hien22jf4 <93090278+hien22jf4@users.noreply.github.com>
+Date:   Mon Oct 25 22:34:41 2021 +0700
+
+    Create README file
+
+[33mcommit b9ed8de74decc582065cbaa4f79b89e066e16f92[m
+Author: Hien123 <hiennvb221001@gmail.com>
+Date:   Mon Oct 25 21:15:20 2021 +0700
+
+    Add project files.
+
+[33mcommit ed2154d9ba8b62e93146b65aa4ddc8a36821fa83[m
+Author: Hien123 <hiennvb221001@gmail.com>
+Date:   Mon Oct 25 21:15:17 2021 +0700
+
+    Add .gitignore and .gitattributes.

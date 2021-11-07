@@ -68,6 +68,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCaoLopCQ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoLopCQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCaoLopHP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCaoLopHP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BCDIEMSV.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +121,12 @@
     </Compile>
     <Compile Include="Frm_BC_Khoa.Designer.cs">
       <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_LOPCQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_LOPCQ.Designer.cs">
+      <DependentUpon>Frm_BC_LOPCQ.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_BC_MonHoc.cs">
       <SubType>Form</SubType>
@@ -225,6 +243,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Test.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCaoLopCQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoLopCQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoLopHP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCaoLopHP.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BCDIEMSV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BCDIEMSV.cs</LastGenOutput>
@@ -249,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BC_Khoa.resx">
       <DependentUpon>Frm_BC_Khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_LOPCQ.resx">
+      <DependentUpon>Frm_BC_LOPCQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BC_MonHoc.resx">
       <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>
