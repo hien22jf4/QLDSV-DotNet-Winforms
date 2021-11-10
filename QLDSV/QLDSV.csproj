@@ -104,6 +104,12 @@
       <DependentUpon>BC_TTMH.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DSSV_LOPHP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSV_LOPHP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FrmBCDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="Frm_BC_LOPCQ.Designer.cs">
       <DependentUpon>Frm_BC_LOPCQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BC_LOPHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BC_LOPHP.Designer.cs">
+      <DependentUpon>Frm_BC_LOPHP.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_BC_MonHoc.cs">
       <SubType>Form</SubType>
@@ -267,6 +279,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BC_TTMH.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="DSSV_LOPHP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DSSV_LOPHP.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBCDiem.resx">
       <DependentUpon>FrmBCDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BC_LOPCQ.resx">
       <DependentUpon>Frm_BC_LOPCQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BC_LOPHP.resx">
+      <DependentUpon>Frm_BC_LOPHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_BC_MonHoc.resx">
       <DependentUpon>Frm_BC_MonHoc.cs</DependentUpon>

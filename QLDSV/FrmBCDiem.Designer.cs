@@ -39,16 +39,20 @@ namespace QLDSV
             this.CRV.Cursor = System.Windows.Forms.Cursors.Default;
             this.CRV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRV.Location = new System.Drawing.Point(0, 0);
+            this.CRV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CRV.Name = "CRV";
-            this.CRV.Size = new System.Drawing.Size(800, 450);
+            this.CRV.Size = new System.Drawing.Size(600, 366);
             this.CRV.TabIndex = 0;
+            this.CRV.ToolPanelWidth = 150;
+            this.CRV.Load += new System.EventHandler(this.CRV_Load);
             // 
             // FrmBCDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.CRV);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmBCDiem";
             this.Text = "FrmBCDiem";
             this.Load += new System.EventHandler(this.FrmBCDiem_Load);

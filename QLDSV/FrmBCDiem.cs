@@ -25,5 +25,10 @@ namespace QLDSV
             BC.SetDataSource(dta);
             CRV.ReportSource = BC;
         }
+
+        private void CRV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
