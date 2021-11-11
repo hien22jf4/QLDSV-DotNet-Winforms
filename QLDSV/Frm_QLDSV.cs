@@ -188,14 +188,38 @@ namespace QLDSV
 
         private void lỚPCHÍNHQUYToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            //Form frm = new Frm_BaoCaoLopCQ();
-            //frm.Show();
+            Form frm = new Frm_BC_LOPCQ();
+            frm.Show();
         }
 
         private void lỚPHỌCPHẦNToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            //Form frm = new FrmBaoCaoLopHP();
-            //frm.Show();
+            Form frm = new Frm_BC_LOPHP();
+            frm.Show();
+        }
+
+        private void gIẢNGVIÊNToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_GiangVien();
+            frm.Show();
+        }
+
+        private void kHOAToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_Khoa();
+            frm.Show();
+        }
+
+        private void mÔNHỌCToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_MonHoc();
+            frm.Show();
+        }
+
+        private void đIỂMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new FrmBCDiem();
+            frm.Show();
         }
     }
 }
