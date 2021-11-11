@@ -170,6 +170,12 @@
     <Compile Include="Frm_LopHP.Designer.cs">
       <DependentUpon>Frm_LopHP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Main_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main_SV.Designer.cs">
+      <DependentUpon>Frm_Main_SV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_LopHP.resx">
       <DependentUpon>Frm_LopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main_SV.resx">
+      <DependentUpon>Frm_Main_SV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_MonHoc.resx">
       <DependentUpon>Frm_MonHoc.cs</DependentUpon>

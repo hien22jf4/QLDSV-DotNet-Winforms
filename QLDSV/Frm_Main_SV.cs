@@ -10,25 +10,11 @@ using System.Windows.Forms;
 
 namespace QLDSV
 {
-    public partial class Frm_QLDSV : Form
+    public partial class Frm_Main_SV : Form
     {
         private int childFormNumber = 0;
-        private bool isAdmin = false;
 
-        public Frm_QLDSV(bool isAdmin)
-        {
-            InitializeComponent();
-            if (isAdmin)
-            {
-                mnu_TRA_DIEM.Visible = false;
-                mnu_QL_Diem_SV.Visible = true;
-            } else
-            {
-                mnu_TRA_DIEM.Visible = true;
-                mnu_QL_Diem_SV.Visible = false;
-            }
-        }
-        public Frm_QLDSV()
+        public Frm_Main_SV()
         {
             InitializeComponent();
         }
@@ -118,84 +104,15 @@ namespace QLDSV
             }
         }
 
-        private void mnu_DangNhap_Click(object sender, EventArgs e)
+        private void Frm_Main_SV_Load(object sender, EventArgs e)
         {
-            Form frmDangNhap = new Frm_DangNhap();
-            frmDangNhap.Show();
+
         }
 
-        private void lỚPCHÍNHQUYToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tRAĐIỂMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new Frm_TimKiem_LopCQ();
+            Form frm = new Frm_TraCuuDiemHocPhan();
             frm.Show();
-        }
-
-        private void lỚPHỌCPHẦNToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_TimKiem_LopHP();
-            frm.Show();
-        }
-
-        private void lỚPCHÍNHQUYToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_LopCQ();
-            frm.Show();
-        }
-
-        private void lỚPHỌCPHẦNToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_LopHP();
-            frm.Show();
-        }
-
-        private void kHOAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            Form frm = new Frm_Khoa();
-            frm.Show();
-        }
-
-        private void mÔNHỌCToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            Form frm = new Frm_MonHoc();
-            frm.Show();
-        }
-
-        private void gIẢNGVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_TimKiem_GiangVien();
-            frm.Show();
-        }
-
-        private void mÔNHỌCToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_TimKiem_MonHoc();
-            frm.Show();
-        }
-
-        private void kHOAToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_TimKiem_Khoa();
-            frm.Show();
-        }
-
-        private void gIẢNGVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_GiangVien();
-            frm.Show();
-        }
-
-        private void lỚPCHÍNHQUYToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            //Form frm = new Frm_BaoCaoLopCQ();
-            //frm.Show();
-        }
-
-        private void lỚPHỌCPHẦNToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            //Form frm = new FrmBaoCaoLopHP();
-            //frm.Show();
         }
     }
 }

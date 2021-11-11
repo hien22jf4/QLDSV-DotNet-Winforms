@@ -13,6 +13,7 @@ namespace QLDSV
 {
     public partial class Frm_DangNhap : Form
     {
+        bool isAdmin = false;
         public Frm_DangNhap()
         {
             InitializeComponent();
@@ -23,22 +24,41 @@ namespace QLDSV
             kn.KetNoi_DuLieu();
             string user = txtTenDN.Text;
             string pass = txtMatkhau.Text;
-            string sql_login = "Select user_id, password from LOGIN where user_id = '" + user + "' AND password= '" + pass + "'";
-
+            string sql_login = "Select user_id, password from LOGIN where user_id = '" + user + "' AND password= '" + pass + "'"; 
             SqlCommand cmd = new SqlCommand(sql_login, kn.cnn);
             SqlDataReader datRed = cmd.ExecuteReader();
+            
             if (datRed.Read() == true)
             {
+                isAdmin = true;
                 MessageBox.Show("Đăng nhập thành công!");
-                Form frmmain = new Frm_QLDSV();
+                Form frmmain = new Frm_QLDSV(isAdmin);
                 frmmain.Show();
                 //Visible = false;
                 this.Hide();
+                kn.HuyKetNoi();
             }
 
             else
             {
-                MessageBox.Show("Hãy kiểm tra lại thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                kn.KetNoi_DuLieu();
+                string sql_login_student = "Select id_sv, pass from SINHVIEN_MK where id_sv = '" + user + "' AND pass = '" + pass + "'";
+                SqlCommand cmd2 = new SqlCommand(sql_login_student, kn.cnn);
+                SqlDataReader datRed2 = cmd2.ExecuteReader();
+                if (datRed2.Read())
+                {
+                    isAdmin = false;
+                    MessageBox.Show("Đăng nhập thành công!");
+                    Form frmmain = new Frm_QLDSV(isAdmin);
+                    frmmain.Show();
+                    //Visible = false;
+                    this.Hide();
+                    kn.HuyKetNoi();
+                }
+                else
+                {
+                    MessageBox.Show("Hãy kiểm tra lại thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
