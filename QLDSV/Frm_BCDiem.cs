@@ -24,6 +24,7 @@ namespace QLDSV
             BCDIEMSV BC = new BCDIEMSV();    // KHỞI TẠO BÁO CÁO
             BC.SetDataSource(dta);
             CRV.ReportSource = BC;
+            CRV.Hide();
         }
 
         private void btn_xembc_Click(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace QLDSV
                 BCDIEMSV BC = new BCDIEMSV();    // KHỞI TẠO BÁO CÁO
                 BC.SetDataSource(dta);
                 CRV.ReportSource = BC;
+                CRV.Show();
             }
         }
     }

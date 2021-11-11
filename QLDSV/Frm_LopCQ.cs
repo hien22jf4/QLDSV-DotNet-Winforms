@@ -48,12 +48,14 @@ namespace QLDSV
         {
             LOPCQ(); BANGKHOA();
             dataGridView_LopCQ.Hide();
+            btn_change.Enabled = btn_del.Enabled = btn_add.Enabled = false;
         }
 
         private void btn_new_Click(object sender, EventArgs e)
         {
             txtb_class_id.Text = txtb_class_name.Text = txtb_number.Text = "";
             dataGridView_LopCQ.Show();
+            btn_change.Enabled = btn_del.Enabled = btn_add.Enabled = true;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

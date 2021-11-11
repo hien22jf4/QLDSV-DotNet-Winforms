@@ -73,5 +73,10 @@ namespace QLDSV
         {
 
         }
+
+        private void Frm_DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

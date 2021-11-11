@@ -22,8 +22,8 @@ namespace QLDSV
         {
             DataTable dta = new DataTable();
             dta = kn.Lay_DuLieu("Select *from LOPHOCPHAN");
-            cbo.DataSource = dta;
-            cbo.DisplayMember = "ten_lhp";
+            comboBox1.DataSource = dta;
+            comboBox1.DisplayMember = "id_lhp";
         }
 
         private void btn_print_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace QLDSV
             //ada.SelectCommand = cmd;
             DataTable dta = new DataTable();
             dta = kn.Lay_DuLieu("Select SINHVIEN.id_sv,SINHVIEN.ten_sv,SINHVIEN.dob_sv,LOPHOCPHAN.ten_lhp from SINHVIEN,LOPHOCPHAN,SINHVIEN_LOPHP " +
-                "where SINHVIEN.id_sv = SINHVIEN_LOPHP.id_sv and SINHVIEN_LOPHP.id_lhp = LOPHOCPHAN.id_lhp and LOPHOCPHAN.ten_lhp  = '" + cbo.Text + "'");
+                "where SINHVIEN.id_sv = SINHVIEN_LOPHP.id_sv and SINHVIEN_LOPHP.id_lhp = LOPHOCPHAN.id_lhp and LOPHOCPHAN.ten_lhp  = '" + comboBox1.Text + "'");
             DSSV_LOPHP rpt = new DSSV_LOPHP();
             rpt.SetDataSource(dta);
             crystalReportViewer1.ReportSource = rpt;
@@ -47,6 +47,23 @@ namespace QLDSV
             //Frm_BC_LOPHP f = new Frm_BC_LOPHP();
             //f.crystalReportViewer1.ReportSource = rpt;
             //f.ShowDialog();
+        }
+
+        private void btn_print_Click_1(object sender, EventArgs e)
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DuLieu("Select SINHVIEN.id_sv,SINHVIEN.ten_sv,SINHVIEN.dob_sv,SINHVIEN.que_quan,LOPHOCPHAN.ten_lhp from SINHVIEN,LOPHOCPHAN,SINHVIEN_LOPHP " +
+                "where SINHVIEN.id_sv = SINHVIEN_LOPHP.id_sv and SINHVIEN_LOPHP.id_lhp = LOPHOCPHAN.id_lhp and LOPHOCPHAN.id_lhp  = '" + comboBox1.Text + "'");
+            DSSV_LOPHP rpt = new DSSV_LOPHP();
+            rpt.SetDataSource(dta);
+            crystalReportViewer1.ReportSource = rpt;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.OK) this.Close();
         }
     }
 }

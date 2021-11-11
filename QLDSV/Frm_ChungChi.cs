@@ -44,13 +44,14 @@ namespace QLDSV
         private void Frm_ChungChi_Load(object sender, EventArgs e)
         {
             CHUNGCHI();
-            btn_them.Enabled = false;
+            btn_them.Enabled = btn_xoa.Enabled = button3.Enabled = false;
         }
 
         private void btn_nhapmoi_Click(object sender, EventArgs e)
         {
             txt_machungchi.Text = txt_tenchungchi.Text = "";
             Grid_Chungchi.Show();
+            btn_them.Enabled = btn_xoa.Enabled = button3.Enabled = true;
         }
 
         private void btn_them_Click(object sender, EventArgs e)

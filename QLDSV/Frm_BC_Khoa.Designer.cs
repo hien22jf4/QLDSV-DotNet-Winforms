@@ -39,16 +39,19 @@ namespace QLDSV
             this.BCkhoa.Cursor = System.Windows.Forms.Cursors.Default;
             this.BCkhoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BCkhoa.Location = new System.Drawing.Point(0, 0);
+            this.BCkhoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BCkhoa.Name = "BCkhoa";
-            this.BCkhoa.Size = new System.Drawing.Size(1450, 812);
+            this.BCkhoa.Size = new System.Drawing.Size(648, 528);
             this.BCkhoa.TabIndex = 0;
+            this.BCkhoa.ToolPanelWidth = 133;
             // 
             // Frm_BC_Khoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 812);
+            this.ClientSize = new System.Drawing.Size(648, 528);
             this.Controls.Add(this.BCkhoa);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_BC_Khoa";
             this.Text = "Frm_BC_Khoa";
             this.Load += new System.EventHandler(this.Frm_BC_Khoa_Load);

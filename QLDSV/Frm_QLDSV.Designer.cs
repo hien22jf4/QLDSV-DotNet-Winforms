@@ -70,6 +70,9 @@ namespace QLDSV
             this.bÁOCÁOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lỚPCHÍNHQUYToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.lỚPHỌCPHẦNToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.kHOAToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mÔNHỌCToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gIẢNGVIÊNToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu_TRA_DIEM = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -400,7 +403,10 @@ namespace QLDSV
             // 
             this.bÁOCÁOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lỚPCHÍNHQUYToolStripMenuItem2,
-            this.lỚPHỌCPHẦNToolStripMenuItem2});
+            this.lỚPHỌCPHẦNToolStripMenuItem2,
+            this.kHOAToolStripMenuItem2,
+            this.mÔNHỌCToolStripMenuItem2,
+            this.gIẢNGVIÊNToolStripMenuItem2});
             this.bÁOCÁOToolStripMenuItem.Name = "bÁOCÁOToolStripMenuItem";
             this.bÁOCÁOToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.bÁOCÁOToolStripMenuItem.Text = "BÁO CÁO";
@@ -419,11 +425,34 @@ namespace QLDSV
             this.lỚPHỌCPHẦNToolStripMenuItem2.Text = "LỚP HỌC PHẦN";
             this.lỚPHỌCPHẦNToolStripMenuItem2.Click += new System.EventHandler(this.lỚPHỌCPHẦNToolStripMenuItem2_Click);
             // 
+            // kHOAToolStripMenuItem2
+            // 
+            this.kHOAToolStripMenuItem2.Name = "kHOAToolStripMenuItem2";
+            this.kHOAToolStripMenuItem2.Size = new System.Drawing.Size(184, 24);
+            this.kHOAToolStripMenuItem2.Text = "KHOA";
+            this.kHOAToolStripMenuItem2.Click += new System.EventHandler(this.kHOAToolStripMenuItem2_Click_1);
+            // 
+            // mÔNHỌCToolStripMenuItem2
+            // 
+            this.mÔNHỌCToolStripMenuItem2.Name = "mÔNHỌCToolStripMenuItem2";
+            this.mÔNHỌCToolStripMenuItem2.Size = new System.Drawing.Size(184, 24);
+            this.mÔNHỌCToolStripMenuItem2.Text = "MÔN HỌC";
+            this.mÔNHỌCToolStripMenuItem2.Click += new System.EventHandler(this.mÔNHỌCToolStripMenuItem2_Click_1);
+            // 
+            // gIẢNGVIÊNToolStripMenuItem2
+            // 
+            this.gIẢNGVIÊNToolStripMenuItem2.Name = "gIẢNGVIÊNToolStripMenuItem2";
+            this.gIẢNGVIÊNToolStripMenuItem2.Size = new System.Drawing.Size(184, 24);
+            this.gIẢNGVIÊNToolStripMenuItem2.Text = "GIẢNG VIÊN";
+            this.gIẢNGVIÊNToolStripMenuItem2.Click += new System.EventHandler(this.gIẢNGVIÊNToolStripMenuItem2_Click_1);
+            // 
             // mnu_TRA_DIEM
             // 
+            this.mnu_TRA_DIEM.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnu_TRA_DIEM.Name = "mnu_TRA_DIEM";
-            this.mnu_TRA_DIEM.Size = new System.Drawing.Size(71, 23);
+            this.mnu_TRA_DIEM.Size = new System.Drawing.Size(78, 23);
             this.mnu_TRA_DIEM.Text = "TRA ĐIỂM";
+            this.mnu_TRA_DIEM.Click += new System.EventHandler(this.mnu_TRA_DIEM_Click);
             // 
             // toolStrip
             // 
@@ -517,7 +546,7 @@ namespace QLDSV
             this.toolStripStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 431);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(632, 22);
+            this.statusStrip.Size = new System.Drawing.Size(773, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -539,6 +568,7 @@ namespace QLDSV
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Frm_QLDSV";
             this.Text = "Frm_QLDSV";
+            this.Load += new System.EventHandler(this.Frm_QLDSV_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);
@@ -604,6 +634,9 @@ namespace QLDSV
         private System.Windows.Forms.ToolStripMenuItem lỚPCHÍNHQUYToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem lỚPHỌCPHẦNToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mnu_TRA_DIEM;
+        private System.Windows.Forms.ToolStripMenuItem kHOAToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mÔNHỌCToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem gIẢNGVIÊNToolStripMenuItem2;
     }
 }
 

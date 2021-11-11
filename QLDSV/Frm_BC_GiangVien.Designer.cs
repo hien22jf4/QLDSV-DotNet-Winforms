@@ -39,16 +39,19 @@ namespace QLDSV
             this.BCgiangvien.Cursor = System.Windows.Forms.Cursors.Default;
             this.BCgiangvien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BCgiangvien.Location = new System.Drawing.Point(0, 0);
+            this.BCgiangvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BCgiangvien.Name = "BCgiangvien";
-            this.BCgiangvien.Size = new System.Drawing.Size(1450, 812);
+            this.BCgiangvien.Size = new System.Drawing.Size(687, 528);
             this.BCgiangvien.TabIndex = 0;
+            this.BCgiangvien.ToolPanelWidth = 133;
             // 
             // Frm_BC_GiangVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 812);
+            this.ClientSize = new System.Drawing.Size(687, 528);
             this.Controls.Add(this.BCgiangvien);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_BC_GiangVien";
             this.Text = "Frm_BC_GiangVien";
             this.Load += new System.EventHandler(this.Frm_BC_GiangVien_Load);

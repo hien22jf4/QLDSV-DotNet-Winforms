@@ -114,11 +114,11 @@ namespace QLDSV
             // 
             this.lblThongBao.AutoSize = true;
             this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.Location = new System.Drawing.Point(181, 18);
+            this.lblThongBao.Location = new System.Drawing.Point(117, 28);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(168, 17);
+            this.lblThongBao.Size = new System.Drawing.Size(288, 17);
             this.lblThongBao.TabIndex = 4;
-            this.lblThongBao.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            this.lblThongBao.Text = "CHƯƠNG TRÌNH QUẢN LÝ ĐIỂM SINH VIÊN";
             // 
             // panel1
             // 
@@ -155,6 +155,7 @@ namespace QLDSV
             this.Controls.Add(this.label1);
             this.Name = "Frm_DangNhap";
             this.Text = "Frm_DangNhap";
+            this.Load += new System.EventHandler(this.Frm_DangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

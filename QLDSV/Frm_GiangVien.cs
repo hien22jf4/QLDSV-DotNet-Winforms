@@ -62,6 +62,7 @@ namespace QLDSV
             GIANGVIEN();
             BANGKHOA();
             Gridgiangvien.Hide();
+            btn_them.Enabled = btn_capnhat.Enabled = btn_xoa.Enabled = false;
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -126,6 +127,7 @@ namespace QLDSV
             txtmagv.Text = txttengv.Text = txtquequan.Text = txtgioitinh.Text = txtsodt.Text = "";
             ngaysinh.Value = DateTime.Today;
             Gridgiangvien.Show();
+            btn_them.Enabled = btn_capnhat.Enabled = btn_xoa.Enabled = true;
         }
     }
 }

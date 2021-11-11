@@ -35,12 +35,14 @@ namespace QLDSV
         {
             KHOA(); 
             dataGridViewKhoa.Hide();
+            btnthem.Enabled = btnxoa.Enabled = btnchapnhat.Enabled = false;
         }
 
         private void btntaomoi_Click(object sender, EventArgs e)
         {
             txtmakhoa.Text = txttenkhoa.Text = txtdiachi.Text = txtsodt.Text=txtnamtl.Text="";
             dataGridViewKhoa.Show();
+            btnthem.Enabled = btnxoa.Enabled = btnchapnhat.Enabled = true;
         }
 
         private void btnthem_Click(object sender, EventArgs e)

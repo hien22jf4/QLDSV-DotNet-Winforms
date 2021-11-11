@@ -53,12 +53,14 @@ namespace QLDSV
             KHOA();
             MONHOC();
             dataGridViewMonHoc.Hide();
+            btnchapnhat.Enabled = btnthem.Enabled = btnxoa.Enabled = false;
         }
 
         private void btntaomoi_Click(object sender, EventArgs e)
         {
             txtmamon.Text = txttenmon.Text = txtsotinchi.Text = txtdiemcc.Text = txtdiemck.Text = txtdiemgk.Text = "";
             dataGridViewMonHoc.Show();
+            btnchapnhat.Enabled = btnthem.Enabled = btnxoa.Enabled = true;
         }
 
         private void btnthem_Click(object sender, EventArgs e)
@@ -122,5 +124,7 @@ namespace QLDSV
         {
             HIENTHIDULIEU();
         }
+
+       
     }
 }

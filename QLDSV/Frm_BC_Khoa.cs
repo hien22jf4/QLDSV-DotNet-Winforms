@@ -20,7 +20,7 @@ namespace QLDSV
         private void Frm_BC_Khoa_Load(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DuLieu("select*from KHOA ");
+            dta = kn.Lay_DuLieu("select * from KHOA ");
             BC_TTK BC = new BC_TTK();
             BC.SetDataSource(dta);
             BCkhoa.ReportSource = BC;

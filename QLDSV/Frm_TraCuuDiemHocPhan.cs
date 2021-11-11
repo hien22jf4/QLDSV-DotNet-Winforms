@@ -20,9 +20,10 @@ namespace QLDSV
         private void DIEMHOCPHAN()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DuLieu("select *from DIEMHOCPHAN order by id_lhp");
+            dta = kn.Lay_DuLieu("select distinct id_lhp from DIEMHOCPHAN");
             cbomlhp.DataSource = dta;
             cbomlhp.DisplayMember = "id_lhp";
+    
         }
         private void SINHVIEN()
         {
@@ -78,5 +79,10 @@ namespace QLDSV
             thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (thongbao == DialogResult.OK) this.Close();
         }
+
+        //private void cbomlhp_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

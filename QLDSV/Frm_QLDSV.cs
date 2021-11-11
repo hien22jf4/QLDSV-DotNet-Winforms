@@ -20,12 +20,14 @@ namespace QLDSV
             InitializeComponent();
             if (isAdmin)
             {
-                mnu_TRA_DIEM.Visible = false;
+                mnu_TRA_DIEM.Visible = true;
                 mnu_QL_Diem_SV.Visible = true;
             } else
             {
                 mnu_TRA_DIEM.Visible = true;
-                mnu_QL_Diem_SV.Visible = false;
+                //mnu_QL_Diem_SV.Visible = false;
+                bÁOCÁOToolStripMenuItem.Visible = false;
+                cHỈNHSỬAToolStripMenuItem.Visible = false;
             }
         }
         public Frm_QLDSV()
@@ -218,8 +220,42 @@ namespace QLDSV
 
         private void đIỂMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new FrmBCDiem();
+            Form frm = new Frm_BCDiem();
             frm.Show();
+        }
+
+        //private void Frm_QLDSV_Load(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void mnu_TRA_DIEM_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_TraCuuDiemHocPhan();
+            frm.Show();
+        }
+
+        private void kHOAToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_Khoa();
+            frm.Show();
+        }
+
+        private void mÔNHỌCToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_MonHoc();
+            frm.Show();
+        }
+
+        private void gIẢNGVIÊNToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_GiangVien();
+            frm.Show();
+        }
+
+        private void Frm_QLDSV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

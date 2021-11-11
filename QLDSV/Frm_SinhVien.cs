@@ -87,6 +87,7 @@ namespace QLDSV
             SINHVIEN();
             LOPCQ();
             Grid_Sinhvien.Hide();
+            btn_them.Enabled = btn_xoa.Enabled = button3.Enabled = false;
         }
 
         private void btn_nhapmoi_Click(object sender, EventArgs e)
@@ -94,6 +95,7 @@ namespace QLDSV
             txt_masv.Text = txt_tensv.Text = txt_quequan.Text = "";
             ngaysinh.Value = DateTime.Today;
             Grid_Sinhvien.Show();
+            btn_them.Enabled = btn_xoa.Enabled = button3.Enabled = true;
         }
 
         private void btn_them_Click(object sender, EventArgs e)

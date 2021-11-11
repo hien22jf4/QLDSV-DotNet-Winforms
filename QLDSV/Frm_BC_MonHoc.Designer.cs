@@ -39,16 +39,19 @@ namespace QLDSV
             this.BCmonhoc.Cursor = System.Windows.Forms.Cursors.Default;
             this.BCmonhoc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BCmonhoc.Location = new System.Drawing.Point(0, 0);
+            this.BCmonhoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BCmonhoc.Name = "BCmonhoc";
-            this.BCmonhoc.Size = new System.Drawing.Size(1450, 812);
+            this.BCmonhoc.Size = new System.Drawing.Size(576, 528);
             this.BCmonhoc.TabIndex = 0;
+            this.BCmonhoc.ToolPanelWidth = 133;
             // 
             // Frm_BC_MonHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 812);
+            this.ClientSize = new System.Drawing.Size(576, 528);
             this.Controls.Add(this.BCmonhoc);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_BC_MonHoc";
             this.Text = "Frm_BC_MonHoc";
             this.Load += new System.EventHandler(this.Frm_BC_MonHoc_Load);
