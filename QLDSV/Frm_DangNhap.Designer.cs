@@ -49,7 +49,7 @@ namespace QLDSV
             this.btnThoat.Location = new System.Drawing.Point(366, 176);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(97, 33);
-            this.btnThoat.TabIndex = 10;
+            this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -60,7 +60,7 @@ namespace QLDSV
             this.btnDangNhap.Location = new System.Drawing.Point(195, 176);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(96, 33);
-            this.btnDangNhap.TabIndex = 11;
+            this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -71,7 +71,7 @@ namespace QLDSV
             this.txtMatkhau.Location = new System.Drawing.Point(262, 117);
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.Size = new System.Drawing.Size(214, 23);
-            this.txtMatkhau.TabIndex = 8;
+            this.txtMatkhau.TabIndex = 2;
             // 
             // txtTenDN
             // 
@@ -79,7 +79,7 @@ namespace QLDSV
             this.txtTenDN.Location = new System.Drawing.Point(262, 74);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(214, 23);
-            this.txtTenDN.TabIndex = 9;
+            this.txtTenDN.TabIndex = 1;
             // 
             // label1
             // 

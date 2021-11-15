@@ -25,16 +25,9 @@ namespace QLDSV
             cbomlhp.DisplayMember = "id_lhp";
     
         }
-        private void SINHVIEN()
-        {
-            DataTable dta = new DataTable();
-            dta = kn.Lay_DuLieu("select *from DIEMHOCPHAN order by id_sv");
-            cbomasv.DataSource = dta;
-            cbomasv.DisplayMember = "id_sv";
-        }
         private void Frm_TraCuuDiemHocPhan_Load(object sender, EventArgs e)
         {
-            SINHVIEN();
+
             DIEMHOCPHAN();
             dataGridtklhp.Hide();
         }
@@ -43,7 +36,7 @@ namespace QLDSV
         {
             cbomlhp.Focus();
             cbomlhp.Enabled = true;
-            cbomasv.Enabled = false;
+            txtb_id_sv.Enabled = false;
             
         }
 
@@ -51,7 +44,7 @@ namespace QLDSV
         {
             cbomlhp.Focus();
             cbomlhp.Enabled = false;
-            cbomasv.Enabled = true;
+            txtb_id_sv.Enabled = true;
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -66,7 +59,7 @@ namespace QLDSV
             }
             if (radtenmon.Checked == true)
             {
-                sqlSearch = "select * from DIEMHOCPHAN where id_sv = '" + cbomasv.Text + "'";
+                sqlSearch = "select * from DIEMHOCPHAN where id_sv = '" + txtb_id_sv.Text + "'";
                 dta = kn.Lay_DuLieu(sqlSearch);
             }
            

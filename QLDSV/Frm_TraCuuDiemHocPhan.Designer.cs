@@ -36,11 +36,11 @@ namespace QLDSV
             this.label1 = new System.Windows.Forms.Label();
             this.radmamon = new System.Windows.Forms.RadioButton();
             this.radtenmon = new System.Windows.Forms.RadioButton();
-            this.cbomasv = new System.Windows.Forms.ComboBox();
             this.btn_search = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridtklhp = new System.Windows.Forms.DataGridView();
+            this.txtb_id_sv = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,12 +60,12 @@ namespace QLDSV
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtb_id_sv);
             this.panel2.Controls.Add(this.cbomlhp);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.radmamon);
             this.panel2.Controls.Add(this.radtenmon);
-            this.panel2.Controls.Add(this.cbomasv);
             this.panel2.Location = new System.Drawing.Point(6, 5);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
@@ -79,7 +79,7 @@ namespace QLDSV
             this.cbomlhp.FormattingEnabled = true;
             this.cbomlhp.Location = new System.Drawing.Point(159, 75);
             this.cbomlhp.Name = "cbomlhp";
-            this.cbomlhp.Size = new System.Drawing.Size(121, 23);
+            this.cbomlhp.Size = new System.Drawing.Size(146, 23);
             this.cbomlhp.TabIndex = 10;
             // 
             // label3
@@ -122,27 +122,17 @@ namespace QLDSV
             this.radtenmon.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radtenmon.Location = new System.Drawing.Point(406, 78);
             this.radtenmon.Name = "radtenmon";
-            this.radtenmon.Size = new System.Drawing.Size(98, 20);
+            this.radtenmon.Size = new System.Drawing.Size(101, 20);
             this.radtenmon.TabIndex = 4;
             this.radtenmon.TabStop = true;
-            this.radtenmon.Text = "Mã sinh viên";
+            this.radtenmon.Text = "Mã sinh viên:";
             this.radtenmon.UseVisualStyleBackColor = true;
             this.radtenmon.CheckedChanged += new System.EventHandler(this.radtenmon_CheckedChanged);
-            // 
-            // cbomasv
-            // 
-            this.cbomasv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbomasv.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbomasv.FormattingEnabled = true;
-            this.cbomasv.Location = new System.Drawing.Point(533, 76);
-            this.cbomasv.Name = "cbomasv";
-            this.cbomasv.Size = new System.Drawing.Size(121, 23);
-            this.cbomasv.TabIndex = 5;
             // 
             // btn_search
             // 
             this.btn_search.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.Location = new System.Drawing.Point(338, 142);
+            this.btn_search.Location = new System.Drawing.Point(338, 157);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(75, 23);
             this.btn_search.TabIndex = 6;
@@ -179,6 +169,13 @@ namespace QLDSV
             this.dataGridtklhp.Size = new System.Drawing.Size(771, 221);
             this.dataGridtklhp.TabIndex = 0;
             // 
+            // txtb_id_sv
+            // 
+            this.txtb_id_sv.Location = new System.Drawing.Point(513, 75);
+            this.txtb_id_sv.Name = "txtb_id_sv";
+            this.txtb_id_sv.Size = new System.Drawing.Size(146, 20);
+            this.txtb_id_sv.TabIndex = 11;
+            // 
             // Frm_TraCuuDiemHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,11 +203,11 @@ namespace QLDSV
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radmamon;
         private System.Windows.Forms.RadioButton radtenmon;
-        private System.Windows.Forms.ComboBox cbomasv;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridtklhp;
         private System.Windows.Forms.ComboBox cbomlhp;
+        private System.Windows.Forms.TextBox txtb_id_sv;
     }
 }

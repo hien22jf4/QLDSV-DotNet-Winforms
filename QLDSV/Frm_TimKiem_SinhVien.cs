@@ -34,14 +34,41 @@ namespace QLDSV
 
             if (rad_masv.Checked == true)
             {
-                sqltk = "Select * from SINHVIEN where id_sv like '" + txt_masv.Text + "'";
-                dta = kn.Lay_DuLieu(sqltk);
+                string strCheck = "Select id_sv from SINHVIEN where id_sv = '" + txt_masv.Text + "'";
+                SqlCommand cmd = new SqlCommand(strCheck, kn.cnn);
+                SqlDataReader doc_dl = cmd.ExecuteReader();
+                if (doc_dl.Read() == false)
+                {
+                    MessageBox.Show("Mã sinh viên này không tồn tại, nhập lại mã khác", "Thông báo");
+                    txt_masv.Focus();
+                    doc_dl.Close();
+                    doc_dl.Dispose();
+                }
+                else
+                {
+                    sqltk = "Select * from SINHVIEN where id_sv like '" + txt_masv.Text + "'";
+                    dta = kn.Lay_DuLieu(sqltk);
+                }
+               
             }
 
             if (rad_tensv.Checked == true)
             {
-                sqltk = "Select * from SINHVIEN where ten_sv '%" + txt_tensv.Text + "%'";
-                dta = kn.Lay_DuLieu(sqltk);
+                string strCheck = "Select ten_sv from SINHVIEN where ten_sv = '" + txt_tensv.Text + "'";
+                SqlCommand cmd = new SqlCommand(strCheck, kn.cnn);
+                SqlDataReader doc_dl = cmd.ExecuteReader();
+                if (doc_dl.Read() == false)
+                {
+                    MessageBox.Show("Tên sinh viên này không tồn tại, nhập lại tên khác", "Thông báo");
+                    txt_masv.Focus();
+                    doc_dl.Close();
+                    doc_dl.Dispose();
+                }
+                else
+                {
+                    sqltk = "Select * from SINHVIEN where ten_sv '%" + txt_tensv.Text + "%'";
+                    dta = kn.Lay_DuLieu(sqltk);
+                }
             }
 
             if (rad_malop.Checked == true)

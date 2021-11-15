@@ -20,14 +20,15 @@ namespace QLDSV
             InitializeComponent();
             if (isAdmin)
             {
-                mnu_TRA_DIEM.Visible = true;
-                mnu_QL_Diem_SV.Visible = true;
+                //mnu_TRA_DIEM.Visible = true;
+                //mnu_QL_Diem_SV.Visible = true;
             } else
             {
-                mnu_TRA_DIEM.Visible = true;
-                //mnu_QL_Diem_SV.Visible = false;
-                bÁOCÁOToolStripMenuItem.Visible = false;
-                cHỈNHSỬAToolStripMenuItem.Visible = false;
+                cHỈNHSỬAToolStripMenuItem1.Visible = false;
+                //mnu_TRA_DIEM.Visible = true;
+                ////mnu_QL_Diem_SV.Visible = false;
+                //bÁOCÁOToolStripMenuItem.Visible = false;
+                //cHỈNHSỬAToolStripMenuItem.Visible = false;
             }
         }
         public Frm_QLDSV()
@@ -120,142 +121,168 @@ namespace QLDSV
             }
         }
 
-        private void mnu_DangNhap_Click(object sender, EventArgs e)
+  
+
+        private void Frm_QLDSV_Load(object sender, EventArgs e)
         {
-            Form frmDangNhap = new Frm_DangNhap();
-            frmDangNhap.Show();
+
         }
 
-        private void lỚPCHÍNHQUYToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sINHVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_TimKiem_SinhVien();
+            frm.Show();
+        }
+
+        private void sINHVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_SinhVien();
+            frm.Show();
+        }
+
+        private void đIỂMHỌCPHẦNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_DiemHocPhan();
+            frm.Show();
+        }
+
+        private void lỚPCHÍNHQUYToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_TimKiem_LopCQ();
             frm.Show();
         }
 
-        private void lỚPHỌCPHẦNToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lỚPHỌCPHẦNToolStripMenuItem3_Click(object sender, EventArgs e)
         {
+
             Form frm = new Frm_TimKiem_LopHP();
             frm.Show();
         }
 
-        private void lỚPCHÍNHQUYToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_LopCQ();
-            frm.Show();
-        }
-
-        private void lỚPHỌCPHẦNToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_LopHP();
-            frm.Show();
-        }
-
-        private void kHOAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            Form frm = new Frm_Khoa();
-            frm.Show();
-        }
-
-        private void mÔNHỌCToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            Form frm = new Frm_MonHoc();
-            frm.Show();
-        }
-
-        private void gIẢNGVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
+        private void gIẢNGVIÊNToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_TimKiem_GiangVien();
             frm.Show();
         }
 
-        private void mÔNHỌCToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void mÔNHỌCToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_TimKiem_MonHoc();
             frm.Show();
         }
 
-        private void kHOAToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void kHOAToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_TimKiem_Khoa();
             frm.Show();
         }
 
-        private void gIẢNGVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void tHÔNGTINSINHVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new Frm_GiangVien();
+            Form frm = new Frm_TimKiem_SinhVien();
             frm.Show();
         }
 
-        private void lỚPCHÍNHQUYToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BC_LOPCQ();
-            frm.Show();
-        }
-
-        private void lỚPHỌCPHẦNToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BC_LOPHP();
-            frm.Show();
-        }
-
-        private void gIẢNGVIÊNToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BC_GiangVien();
-            frm.Show();
-        }
-
-        private void kHOAToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BC_Khoa();
-            frm.Show();
-        }
-
-        private void mÔNHỌCToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BC_MonHoc();
-            frm.Show();
-        }
-
-        private void đIỂMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form frm = new Frm_BCDiem();
-            frm.Show();
-        }
-
-        //private void Frm_QLDSV_Load(object sender, EventArgs e)
-        //{
-
-        //}
-
-        private void mnu_TRA_DIEM_Click(object sender, EventArgs e)
+        private void tRAĐIỂMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_TraCuuDiemHocPhan();
             frm.Show();
         }
 
-        private void kHOAToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        private void lỚPCHÍNHQUYToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_LopCQ();
+            frm.Show();
+        }
+
+        private void lỚPHỌCPHẦNToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_LopHP();
+            frm.Show();
+        }
+
+        private void gIẢNGVIÊNToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_GiangVien();
+            frm.Show();
+        }
+
+        private void mÔNHỌCToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_MonHoc();
+            frm.Show();
+        }
+
+        private void kHOAToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_Khoa();
+            frm.Show();
+        }
+
+        private void tHÔNGTINSINHVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_SinhVien();
+            frm.Show();
+        }
+
+        private void đIỂMSINHVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_DiemHocPhan();
+            frm.Show();
+        }
+
+        private void đĂNGNHẬPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_DangNhap();
+            frm.Show();
+        }
+
+        private void dANHSÁCHSINHVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_LOPCQ();
+            frm.Show();
+        }
+
+        private void dANHSÁCHSINHVIÊNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_LOPHP();
+            frm.Show();
+        }
+
+        private void kHOAToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_BC_Khoa();
             frm.Show();
         }
 
-        private void mÔNHỌCToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        private void mÔNHỌCToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_BC_MonHoc();
             frm.Show();
         }
 
-        private void gIẢNGVIÊNToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        private void gIẢNGVIÊNToolStripMenuItem4_Click(object sender, EventArgs e)
         {
             Form frm = new Frm_BC_GiangVien();
             frm.Show();
         }
 
-        private void Frm_QLDSV_Load(object sender, EventArgs e)
+        private void đIỂMSINHVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form frm = new Frm_BCDiem();
+            frm.Show();
+        }
 
+        private void tHÔNGTINLỚPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_DS_LOPHP();
+            frm.Show();
+        }
+
+        private void dANHSÁCHLỚPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Frm_BC_DS_LOPCQ();
+            frm.Show();
         }
     }
 }
