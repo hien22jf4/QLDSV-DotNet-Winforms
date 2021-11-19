@@ -31,6 +31,7 @@ namespace QLDSV
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtb_id_sv = new System.Windows.Forms.TextBox();
             this.cbomlhp = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@ namespace QLDSV
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridtklhp = new System.Windows.Forms.DataGridView();
-            this.txtb_id_sv = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,8 +69,15 @@ namespace QLDSV
             this.panel2.Location = new System.Drawing.Point(6, 5);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(756, 132);
+            this.panel2.Size = new System.Drawing.Size(756, 113);
             this.panel2.TabIndex = 9;
+            // 
+            // txtb_id_sv
+            // 
+            this.txtb_id_sv.Location = new System.Drawing.Point(513, 75);
+            this.txtb_id_sv.Name = "txtb_id_sv";
+            this.txtb_id_sv.Size = new System.Drawing.Size(146, 20);
+            this.txtb_id_sv.TabIndex = 11;
             // 
             // cbomlhp
             // 
@@ -132,7 +139,7 @@ namespace QLDSV
             // btn_search
             // 
             this.btn_search.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.Location = new System.Drawing.Point(338, 157);
+            this.btn_search.Location = new System.Drawing.Point(338, 123);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(75, 23);
             this.btn_search.TabIndex = 6;
@@ -154,27 +161,20 @@ namespace QLDSV
             // panel1
             // 
             this.panel1.Controls.Add(this.dataGridtklhp);
-            this.panel1.Location = new System.Drawing.Point(6, 198);
+            this.panel1.Location = new System.Drawing.Point(6, 152);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(773, 178);
+            this.panel1.Size = new System.Drawing.Size(773, 240);
             this.panel1.TabIndex = 6;
             // 
             // dataGridtklhp
             // 
             this.dataGridtklhp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridtklhp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridtklhp.Location = new System.Drawing.Point(3, -27);
+            this.dataGridtklhp.Location = new System.Drawing.Point(3, 3);
             this.dataGridtklhp.Name = "dataGridtklhp";
             this.dataGridtklhp.RowHeadersWidth = 51;
-            this.dataGridtklhp.Size = new System.Drawing.Size(771, 221);
+            this.dataGridtklhp.Size = new System.Drawing.Size(771, 234);
             this.dataGridtklhp.TabIndex = 0;
-            // 
-            // txtb_id_sv
-            // 
-            this.txtb_id_sv.Location = new System.Drawing.Point(513, 75);
-            this.txtb_id_sv.Name = "txtb_id_sv";
-            this.txtb_id_sv.Size = new System.Drawing.Size(146, 20);
-            this.txtb_id_sv.TabIndex = 11;
             // 
             // Frm_TraCuuDiemHocPhan
             // 
